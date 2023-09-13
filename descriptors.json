@@ -1,0 +1,110 @@
+{
+  "file_name": "indicents",
+  "domain": "example.org",
+  "data_description": "Incidents that happened between 2012-05-30 and 2006-11-07",
+  "trace": {
+    "keys": ["concept:name"],
+    "object_type": "Incident",
+    "attributes": [
+      {
+        "object_attribute_value": "concept:name",
+        "object_attribute_name": "Incident_number",
+        "datatype": "string"
+      }
+    ]
+  },
+  "events": {
+    "keys": ["concept:name", "lifecycle:transition"],
+    "event_timestamp": "time:timestamp",
+    "attributes": [
+      {
+        "event_attribute_value": "concept:name",
+        "event_attribute_name": "Status",
+        "datatype": "string"
+      },
+      {
+        "event_attribute_value": "lifecycle:transition",
+        "event_attribute_name": "Sub-status",
+        "datatype": "string"
+      },
+      {
+        "event_attribute_value": "impact",
+        "event_attribute_name": "Impact",
+        "datatype": "string"
+      }
+    ],
+    "relations": [
+      {
+        "relation_type": "Is_Part_Of_Trace",
+        "related_to": "Incident"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "keys": ["product"],
+      "object_type": "Product",
+      "object_timestamp": "time:timestamp",
+      "attributes": [
+        {
+          "object_attribute_value": "product",
+          "object_attribute_name": "Product_number",
+          "datatype": "string"
+        }
+      ],
+      "relations": [
+        {
+          "relation_type": "Is_Involved_In_Event",
+          "related_to": "events"
+        }
+      ]
+    },
+    {
+      "keys": ["org:role", "oranization country"],
+      "object_type": "Support_Team_ST",
+      "object_timestamp": "time:timestamp",
+      "attributes": [
+        {
+          "object_attribute_value": "org:role",
+          "object_attribute_name": "Support_Team_function_division",
+          "datatype": "string"
+        },
+        {
+          "object_attribute_value": "oranization country",
+          "object_attribute_name": "Support_Team_country",
+          "datatype": "string"
+        }
+      ],
+      "relations": [
+        {
+          "relation_type": "Is_Supporting_Event",
+          "related_to": "events"
+        }
+      ]
+    },
+    {
+      "keys": ["org:resource", "resource country"],
+      "object_type": "ST_responsible",
+      "object_timestamp": "time:timestamp",
+      "attributes": [
+        {
+          "object_attribute_value": "org:resource",
+          "object_attribute_name": "ST_resp._person_first_name",
+          "datatype": "string"
+        },
+        {
+          "object_attribute_value": "resource country",
+          "object_attribute_name": "ST_resp._person_op_country",
+          "datatype": "string"
+        }
+      ],
+      "relations": [
+        { "relation_type": "WORKS_FOR", "related_to": "Support_Team_ST" },
+        {
+          "relation_type": "Is_Responsible_For_Event",
+          "related_to": "events"
+        }
+      ]
+    }
+  ]
+}

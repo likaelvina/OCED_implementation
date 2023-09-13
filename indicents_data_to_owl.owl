@@ -1,0 +1,2493 @@
+@prefix ont: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Impact a owl:DatatypeProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:string .
+
+ont:Is_Involved_In_Event a owl:ObjectProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:events .
+
+ont:Is_Part_Of_Trace a owl:ObjectProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:Incident .
+
+ont:Is_Responsible_For_Event a owl:ObjectProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:events .
+
+ont:Is_Supporting_Event a owl:ObjectProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:events .
+
+ont:Product_PROD509_60_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_60 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-02T09:04:02+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_61_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_61 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-02T09:09:06+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_62_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_62 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T07:44:34+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_63_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_63 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:02:01+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_64_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_64 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:05:42+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_65_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_65 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:06:03+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_66_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_66 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:13:32+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_67_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_67 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:28:16+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_68_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_68 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:37:51+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_69_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_69 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T08:43:51+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_70_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_70 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T09:34:36+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_71_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_71 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T09:51:25+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_72_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_72 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-15T10:58:54+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_73_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_73 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-22T08:28:28+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_74_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_74 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-22T08:37:42+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_75_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_75 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-22T09:26:41+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_76_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_76 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-22T13:29:42+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_77_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_77 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-23T08:34:38+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_78_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_78 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-23T08:46:31+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_79_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_79 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-23T08:48:56+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_80_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_80 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-23T08:50:34+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD509_81_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_81 ;
+    ont:Product_number "PROD509"^^xsd:string ;
+    ont:Product_timestamp "2012-05-30T13:07:15+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_11_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_11 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2007-07-25T12:21:05+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_12_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_12 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_13_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_13 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2010-08-25T09:13:01+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_14_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_14 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2011-09-05T07:24:13+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_15_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_15 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2011-11-14T15:10:25+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_16_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_16 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2012-01-03T10:30:35+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_17_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Completed_Closed_17 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2012-01-03T10:31:53+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_23_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_23 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2008-06-04T10:02:18+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_24_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_24 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_25_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_25 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2010-08-25T09:06:45+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_26_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_26 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2011-09-03T06:02:11+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_27_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_27 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2011-11-14T15:09:27+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_28_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_28 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2012-01-05T13:08:18+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD681_29_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Completed_Closed_29 ;
+    ont:Product_number "PROD681"^^xsd:string ;
+    ont:Product_timestamp "2012-01-05T13:09:00+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_10_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_10 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-03T05:10:59+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_18_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_18 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2008-05-07T16:58:51+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_19_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_19 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2008-10-06T14:44:37+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_1_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_1 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2006-11-07T09:00:36+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_20_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_20 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_21_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_21 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-01T22:27:50+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_22_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_22 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-01T22:27:55+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_2_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_2 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2006-11-07T12:05:44+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_30_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_30 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2008-11-13T10:01:04+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_31_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_31 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:35+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_32_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_32 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-11-14T14:57:27+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_33_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_33 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-01-14T09:34:54+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_34_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_34 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-01-27T09:43:29+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_35_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_35 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-02-03T09:20:05+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_36_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_36 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-02-22T07:33:08+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_37_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_37 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-01T22:17:47+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_3_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_3 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_46_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_46 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-02-16T10:03:41+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_47_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_47 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-01T22:16:31+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_48_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_48 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-02-16T10:04:37+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_49_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_49 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-01T22:16:15+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_4_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_4 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-03T05:09:09+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_52_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_52 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:06:34+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_53_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_53 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:10:10+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_54_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_54 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:12:19+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_55_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_55 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:12:35+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_56_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_56 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:12:46+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_57_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_57 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-03-11T13:13:02+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_58_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_58 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2010-07-20T07:25:18+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_59_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_59 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-05T07:28:42+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_5_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_5 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2007-03-20T08:06:25+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_6_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_6 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:31+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_7_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_7 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2011-09-03T05:10:53+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_8_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_8 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2007-05-10T14:21:54+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD753_9_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Wait_9 ;
+    ont:Product_number "PROD753"^^xsd:string ;
+    ont:Product_timestamp "2009-12-02T13:24:33+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_38_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_38 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2010-02-03T08:34:32+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_39_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Queued_Awaiting_Assignment_39 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2010-02-03T08:45:18+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_40_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_40 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2010-02-03T09:40:51+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_41_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_Assigned_41 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2010-02-03T09:40:58+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_42_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_42 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2011-12-20T21:25:19+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_43_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Completed_Closed_43 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2012-01-03T12:13:02+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_44_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_44 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2011-12-28T14:05:47+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_45_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Completed_Closed_45 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2012-01-30T11:29:51+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_50_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Accepted_In_Progress_50 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2011-12-28T15:01:17+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_PROD98_51_1 a ont:objects ;
+    ont:Is_Involved_In_Event ont:Completed_Closed_51 ;
+    ont:Product_number "PROD98"^^xsd:string ;
+    ont:Product_timestamp "2012-01-30T11:30:21+00:00"^^xsd:dateTime ;
+    ont:object_type "Product"^^xsd:string .
+
+ont:Product_number a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:Product_timestamp a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:dateTime .
+
+ont:ST_resp._person_first_name a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:ST_resp._person_op_country a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:ST_responsible_Els_Belgium_76_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_76 ;
+    ont:ST_resp._person_first_name "Els"^^xsd:string ;
+    ont:ST_resp._person_op_country "Belgium"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-22T13:29:42+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_C_2_be_76_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Els_Belgium_78_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_78 ;
+    ont:ST_resp._person_first_name "Els"^^xsd:string ;
+    ont:ST_resp._person_op_country "Belgium"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-23T08:46:31+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_2_be_78_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Els_Belgium_79_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_79 ;
+    ont:ST_resp._person_first_name "Els"^^xsd:string ;
+    ont:ST_resp._person_op_country "Belgium"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-23T08:48:56+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_C_2_be_79_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_38_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_38 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-03T08:34:32+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_38_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_39_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_39 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-03T08:45:18+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_39_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_40_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_40 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-03T09:40:51+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_40_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_41_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_41 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-03T09:40:58+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_41_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_42_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_42 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-12-20T21:25:19+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_42_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_43_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Completed_Closed_43 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-03T12:13:02+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_us_43_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_44_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_44 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-12-28T14:05:47+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_nan_us_44_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_45_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Completed_Closed_45 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-30T11:29:51+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_nan_us_45_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_50_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_50 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-12-28T15:01:17+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_nan_us_50_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Ewa_POLAND_51_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Completed_Closed_51 ;
+    ont:ST_resp._person_first_name "Ewa"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-30T11:30:21+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_nan_us_51_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Gitt_Sweden_74_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_74 ;
+    ont:ST_resp._person_first_name "Gitt"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-22T08:37:42+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_2_be_74_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Jitender_Sweden_63_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_63 ;
+    ont:ST_resp._person_first_name "Jitender"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:02:01+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_63_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Jitender_Sweden_65_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_65 ;
+    ont:ST_resp._person_first_name "Jitender"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:06:03+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_65_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Jitender_Sweden_69_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_69 ;
+    ont:ST_resp._person_first_name "Jitender"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:43:51+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_69_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Jo_Belgium_77_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_77 ;
+    ont:ST_resp._person_first_name "Jo"^^xsd:string ;
+    ont:ST_resp._person_op_country "Belgium"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-23T08:34:38+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_C_2_be_77_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Joacim_Sweden_71_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_71 ;
+    ont:ST_resp._person_first_name "Joacim"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T09:51:25+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_4_be_71_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Joacim_Sweden_72_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_72 ;
+    ont:ST_resp._person_first_name "Joacim"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T10:58:54+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_4_be_72_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Lars_Sweden_80_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_80 ;
+    ont:ST_resp._person_first_name "Lars"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-23T08:50:34+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_C_2_be_80_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Lars_Sweden_81_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_81 ;
+    ont:ST_resp._person_first_name "Lars"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-30T13:07:15+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_C_2_be_81_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Miroslaw_POLAND_66_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_66 ;
+    ont:ST_resp._person_first_name "Miroslaw"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:13:32+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_1_be_66_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_11_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_11 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2007-07-25T12:21:05+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_11_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_12_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_12 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_12_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_13_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_13 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-08-25T09:13:01+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_13_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_14_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_14 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-05T07:24:13+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_14_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_15_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_15 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-11-14T15:10:25+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_15_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_16_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_16 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-03T10:30:35+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_16_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_17_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Completed_Closed_17 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-03T10:31:53+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_se_17_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Niklas_Sweden_27_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_27 ;
+    ont:ST_resp._person_first_name "Niklas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-11-14T15:09:27+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_27_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Pawel_POLAND_55_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_55 ;
+    ont:ST_resp._person_first_name "Pawel"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:12:35+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_55_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Pawel_POLAND_57_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_57 ;
+    ont:ST_resp._person_first_name "Pawel"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:13:02+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_57_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Prasad_Sweden_60_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_60 ;
+    ont:ST_resp._person_first_name "Prasad"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-02T09:04:02+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_60_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Prasad_Sweden_61_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_61 ;
+    ont:ST_resp._person_first_name "Prasad"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-02T09:09:06+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_61_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Prasad_Sweden_62_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_62 ;
+    ont:ST_resp._person_first_name "Prasad"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T07:44:34+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_62_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Prasad_Sweden_64_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_64 ;
+    ont:ST_resp._person_first_name "Prasad"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:05:42+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_64_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Prasad_Sweden_68_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_68 ;
+    ont:ST_resp._person_first_name "Prasad"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:37:51+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_10_be_68_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Pratap_INDIA_70_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_70 ;
+    ont:ST_resp._person_first_name "Pratap"^^xsd:string ;
+    ont:ST_resp._person_op_country "INDIA"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T09:34:36+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_4_be_70_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Przemyslaw_POLAND_67_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_67 ;
+    ont:ST_resp._person_first_name "Przemyslaw"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-15T08:28:16+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_1_be_67_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Przemyslaw_POLAND_73_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_73 ;
+    ont:ST_resp._person_first_name "Przemyslaw"^^xsd:string ;
+    ont:ST_resp._person_op_country "POLAND"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-22T08:28:28+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_1_be_73_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_10_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_10 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-03T05:10:59+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_10_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_18_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_18 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2008-05-07T16:58:51+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_18_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_19_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_19 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2008-10-06T14:44:37+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_19_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_1_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_1 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2006-11-07T09:00:36+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_1_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_20_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_20 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_20_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_21_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_21 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-01T22:27:50+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_21_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_22_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_22 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-01T22:27:55+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_22_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_23_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_23 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2008-06-04T10:02:18+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_23_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_24_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_24 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_24_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_25_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_25 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-08-25T09:06:45+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_25_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_26_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_26 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-03T06:02:11+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_26_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_28_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_28 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-05T13:08:18+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_28_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_29_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Completed_Closed_29 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-01-05T13:09:00+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_29_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_2_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_2 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2006-11-07T12:05:44+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_2_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_30_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_30 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2008-11-13T10:01:04+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_30_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_31_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_31 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:35+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_31_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_32_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_32 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-11-14T14:57:27+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_32_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_33_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_33 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-01-14T09:34:54+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_33_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_34_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_34 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-01-27T09:43:29+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_34_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_35_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_35 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-03T09:20:05+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_35_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_36_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_36 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-22T07:33:08+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_36_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_37_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_37 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-01T22:17:47+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_37_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_3_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_3 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_3_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_46_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_46 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-16T10:03:41+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_46_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_47_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_47 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-01T22:16:31+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_47_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_48_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_48 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-02-16T10:04:37+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_48_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_49_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_49 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-01T22:16:15+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_49_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_4_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_4 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-03T05:09:09+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_4_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_52_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_52 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:06:34+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_52_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_53_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_53 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:10:10+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_53_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_54_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_54 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:12:19+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_54_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_56_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Queued_Awaiting_Assignment_56 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-03-11T13:12:46+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_56_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_58_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Assigned_58 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2010-07-20T07:25:18+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_58_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_59_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_59 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-05T07:28:42+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_59_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_5_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_5 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2007-03-20T08:06:25+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_5_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_6_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_6 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:31+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_6_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_7_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_7 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2011-09-03T05:10:53+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_7_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_8_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_8 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2007-05-10T14:21:54+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_8_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Tomas_Sweden_9_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_Wait_9 ;
+    ont:ST_resp._person_first_name "Tomas"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2009-12-02T13:24:33+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_A2_2_cn_9_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_Urban_Sweden_75_3 a ont:objects ;
+    ont:Is_Responsible_For_Event ont:Accepted_In_Progress_75 ;
+    ont:ST_resp._person_first_name "Urban"^^xsd:string ;
+    ont:ST_resp._person_op_country "Sweden"^^xsd:string ;
+    ont:ST_responsible_timestamp "2012-05-22T09:26:41+00:00"^^xsd:dateTime ;
+    ont:WORKS_FOR ont:Support_Team_ST_E_2_be_75_2 ;
+    ont:object_type "ST_responsible"^^xsd:string .
+
+ont:ST_responsible_timestamp a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:dateTime .
+
+ont:Status a owl:DatatypeProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:string .
+
+ont:Sub-status a owl:DatatypeProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:string .
+
+ont:Support_Team_ST_timestamp a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:dateTime .
+
+ont:Support_Team_country a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:Support_Team_function_division a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:WORKS_FOR a owl:ObjectProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:Support_Team_ST .
+
+ont:event_timestamp a owl:DatatypeProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:dateTime .
+
+ont:event_type a owl:DatatypeProperty ;
+    owl:domain ont:events ;
+    owl:range xsd:string .
+
+ont:object_type a owl:DatatypeProperty ;
+    owl:domain ont:objects ;
+    owl:range xsd:string .
+
+ont:Support_Team_ST_A2_1_be_66_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_66 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:13:32+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "A2_1"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_1_be_67_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_67 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:28:16+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "A2_1"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_1_be_73_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_73 ;
+    ont:Support_Team_ST_timestamp "2012-05-22T08:28:28+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "A2_1"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_10_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_10 ;
+    ont:Support_Team_ST_timestamp "2011-09-03T05:10:59+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_18_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_18 ;
+    ont:Support_Team_ST_timestamp "2008-05-07T16:58:51+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_19_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_19 ;
+    ont:Support_Team_ST_timestamp "2008-10-06T14:44:37+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_1_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_1 ;
+    ont:Support_Team_ST_timestamp "2006-11-07T09:00:36+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_20_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_20 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_21_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_21 ;
+    ont:Support_Team_ST_timestamp "2011-09-01T22:27:50+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_22_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_22 ;
+    ont:Support_Team_ST_timestamp "2011-09-01T22:27:55+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_23_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_23 ;
+    ont:Support_Team_ST_timestamp "2008-06-04T10:02:18+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_24_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_24 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_25_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_25 ;
+    ont:Support_Team_ST_timestamp "2010-08-25T09:06:45+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_26_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_26 ;
+    ont:Support_Team_ST_timestamp "2011-09-03T06:02:11+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_27_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_27 ;
+    ont:Support_Team_ST_timestamp "2011-11-14T15:09:27+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_28_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_28 ;
+    ont:Support_Team_ST_timestamp "2012-01-05T13:08:18+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_29_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Completed_Closed_29 ;
+    ont:Support_Team_ST_timestamp "2012-01-05T13:09:00+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_2_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_2 ;
+    ont:Support_Team_ST_timestamp "2006-11-07T12:05:44+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_30_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_30 ;
+    ont:Support_Team_ST_timestamp "2008-11-13T10:01:04+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_31_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_31 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:35+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_32_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_32 ;
+    ont:Support_Team_ST_timestamp "2011-11-14T14:57:27+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_33_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_33 ;
+    ont:Support_Team_ST_timestamp "2010-01-14T09:34:54+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_34_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_34 ;
+    ont:Support_Team_ST_timestamp "2010-01-27T09:43:29+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_35_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_35 ;
+    ont:Support_Team_ST_timestamp "2010-02-03T09:20:05+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_36_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_36 ;
+    ont:Support_Team_ST_timestamp "2010-02-22T07:33:08+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_37_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_37 ;
+    ont:Support_Team_ST_timestamp "2011-09-01T22:17:47+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_3_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_3 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_46_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_46 ;
+    ont:Support_Team_ST_timestamp "2010-02-16T10:03:41+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_47_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_47 ;
+    ont:Support_Team_ST_timestamp "2011-09-01T22:16:31+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_48_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_48 ;
+    ont:Support_Team_ST_timestamp "2010-02-16T10:04:37+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_49_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_49 ;
+    ont:Support_Team_ST_timestamp "2011-09-01T22:16:15+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_4_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_4 ;
+    ont:Support_Team_ST_timestamp "2011-09-03T05:09:09+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_52_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_52 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:06:34+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_53_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_53 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:10:10+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_54_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_54 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:12:19+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_55_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_55 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:12:35+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_56_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_56 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:12:46+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_57_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_57 ;
+    ont:Support_Team_ST_timestamp "2010-03-11T13:13:02+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_58_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_58 ;
+    ont:Support_Team_ST_timestamp "2010-07-20T07:25:18+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_59_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_59 ;
+    ont:Support_Team_ST_timestamp "2011-09-05T07:28:42+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_5_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_5 ;
+    ont:Support_Team_ST_timestamp "2007-03-20T08:06:25+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_6_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_6 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:31+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_7_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_7 ;
+    ont:Support_Team_ST_timestamp "2011-09-03T05:10:53+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_8_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_8 ;
+    ont:Support_Team_ST_timestamp "2007-05-10T14:21:54+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_cn_9_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_9 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:33+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "cn"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_11_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_11 ;
+    ont:Support_Team_ST_timestamp "2007-07-25T12:21:05+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_12_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_12 ;
+    ont:Support_Team_ST_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_13_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_13 ;
+    ont:Support_Team_ST_timestamp "2010-08-25T09:13:01+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_14_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_14 ;
+    ont:Support_Team_ST_timestamp "2011-09-05T07:24:13+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_15_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_15 ;
+    ont:Support_Team_ST_timestamp "2011-11-14T15:10:25+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_16_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_16 ;
+    ont:Support_Team_ST_timestamp "2012-01-03T10:30:35+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_se_17_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Completed_Closed_17 ;
+    ont:Support_Team_ST_timestamp "2012-01-03T10:31:53+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "se"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_38_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_38 ;
+    ont:Support_Team_ST_timestamp "2010-02-03T08:34:32+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_39_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_39 ;
+    ont:Support_Team_ST_timestamp "2010-02-03T08:45:18+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_40_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_40 ;
+    ont:Support_Team_ST_timestamp "2010-02-03T09:40:51+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_41_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_41 ;
+    ont:Support_Team_ST_timestamp "2010-02-03T09:40:58+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_42_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_42 ;
+    ont:Support_Team_ST_timestamp "2011-12-20T21:25:19+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_A2_2_us_43_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Completed_Closed_43 ;
+    ont:Support_Team_ST_timestamp "2012-01-03T12:13:02+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "A2_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_C_2_be_76_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_76 ;
+    ont:Support_Team_ST_timestamp "2012-05-22T13:29:42+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "C_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_C_2_be_77_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_77 ;
+    ont:Support_Team_ST_timestamp "2012-05-23T08:34:38+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "C_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_C_2_be_79_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_79 ;
+    ont:Support_Team_ST_timestamp "2012-05-23T08:48:56+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "C_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_C_2_be_80_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Assigned_80 ;
+    ont:Support_Team_ST_timestamp "2012-05-23T08:50:34+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "C_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_C_2_be_81_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_81 ;
+    ont:Support_Team_ST_timestamp "2012-05-30T13:07:15+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "C_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_60_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_60 ;
+    ont:Support_Team_ST_timestamp "2012-05-02T09:04:02+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_61_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_61 ;
+    ont:Support_Team_ST_timestamp "2012-05-02T09:09:06+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_62_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_62 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T07:44:34+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_63_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_63 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:02:01+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_64_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_64 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:05:42+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_65_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_65 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:06:03+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_68_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_68 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:37:51+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_10_be_69_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_69 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T08:43:51+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_10"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_2_be_74_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_74 ;
+    ont:Support_Team_ST_timestamp "2012-05-22T08:37:42+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_2_be_75_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_75 ;
+    ont:Support_Team_ST_timestamp "2012-05-22T09:26:41+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_2_be_78_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_78 ;
+    ont:Support_Team_ST_timestamp "2012-05-23T08:46:31+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_2"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_4_be_70_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Queued_Awaiting_Assignment_70 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T09:34:36+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_4"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_4_be_71_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_71 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T09:51:25+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_4"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_E_4_be_72_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_Wait_72 ;
+    ont:Support_Team_ST_timestamp "2012-05-15T10:58:54+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "be"^^xsd:string ;
+    ont:Support_Team_function_division "E_4"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_nan_us_44_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_44 ;
+    ont:Support_Team_ST_timestamp "2011-12-28T14:05:47+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "nan"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_nan_us_45_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Completed_Closed_45 ;
+    ont:Support_Team_ST_timestamp "2012-01-30T11:29:51+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "nan"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_nan_us_50_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Accepted_In_Progress_50 ;
+    ont:Support_Team_ST_timestamp "2011-12-28T15:01:17+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "nan"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Support_Team_ST_nan_us_51_2 a ont:objects ;
+    ont:Is_Supporting_Event ont:Completed_Closed_51 ;
+    ont:Support_Team_ST_timestamp "2012-01-30T11:30:21+00:00"^^xsd:dateTime ;
+    ont:Support_Team_country "us"^^xsd:string ;
+    ont:Support_Team_function_division "nan"^^xsd:string ;
+    ont:object_type "Support_Team_ST"^^xsd:string .
+
+ont:Incident_1-354039443 a ont:objects ;
+    ont:Incident_number "1-354039443"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-354350908 a ont:objects ;
+    ont:Incident_number "1-354350908"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-354376900 a ont:objects ;
+    ont:Incident_number "1-354376900"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-357087417 a ont:objects ;
+    ont:Incident_number "1-357087417"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Accepted_Assigned_15 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2011-11-14T15:10:25+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_27 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2011-11-14T15:09:27+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_35 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-345132462 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2010-02-03T09:20:05+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_41 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2010-02-03T09:40:58+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_58 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2010-07-20T07:25:18+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_77 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2012-05-23T08:34:38+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_Assigned_80 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Assigned"^^xsd:string ;
+    ont:event_timestamp "2012-05-23T08:50:34+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Assigned"^^xsd:string .
+
+ont:Accepted_In_Progress_1 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-147898401 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2006-11-07T09:00:36+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_10 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-172473423 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-03T05:10:59+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_11 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2007-07-25T12:21:05+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_14 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-05T07:24:13+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_16 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-01-03T10:30:35+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_18 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-230541365 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2008-05-07T16:58:51+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_19 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-230541365 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2008-10-06T14:44:37+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_2 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-147898401 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2006-11-07T12:05:44+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_21 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-230541365 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-01T22:27:50+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_22 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-230541365 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-01T22:27:55+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_23 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2008-06-04T10:02:18+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_26 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-03T06:02:11+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_28 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-01-05T13:08:18+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_30 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-270427461 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2008-11-13T10:01:04+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_32 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-270427461 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-11-14T14:57:27+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_33 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-345132462 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-01-14T09:34:54+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_37 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-345132462 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-01T22:17:47+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_38 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-02-03T08:34:32+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_4 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-147898401 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-03T05:09:09+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_40 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-02-03T09:40:51+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_42 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-12-20T21:25:19+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_44 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354039443 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-12-28T14:05:47+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_47 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354350908 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-01T22:16:31+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_49 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354376900 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-01T22:16:15+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_5 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-165554831 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2007-03-20T08:06:25+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_50 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-357087417 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-12-28T15:01:17+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_52 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:06:34+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_53 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:10:10+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_55 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:12:35+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_57 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:13:02+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_59 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-05T07:28:42+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_60 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-02T09:04:02+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_63 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:02:01+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_65 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:06:03+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_67 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:28:16+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_69 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:43:51+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_7 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-165554831 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2011-09-03T05:10:53+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_71 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T09:51:25+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_73 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-22T08:28:28+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_75 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-22T09:26:41+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_78 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-23T08:46:31+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_8 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-172473423 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2007-05-10T14:21:54+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_In_Progress_81 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "In Progress"^^xsd:string ;
+    ont:event_timestamp "2012-05-30T13:07:15+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted In Progress"^^xsd:string .
+
+ont:Accepted_Wait_12 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_20 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-230541365 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_24 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:34+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_3 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-147898401 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:32+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_31 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-270427461 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:35+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_34 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-345132462 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2010-01-27T09:43:29+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_36 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-345132462 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2010-02-22T07:33:08+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_46 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354350908 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2010-02-16T10:03:41+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_48 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354376900 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2010-02-16T10:04:37+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_6 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-165554831 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:31+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_61 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2012-05-02T09:09:06+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_72 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T10:58:54+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Accepted_Wait_9 a ont:events ;
+    ont:Impact "Low"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-172473423 ;
+    ont:Status "Accepted"^^xsd:string ;
+    ont:Sub-status "Wait"^^xsd:string ;
+    ont:event_timestamp "2009-12-02T13:24:33+00:00"^^xsd:dateTime ;
+    ont:event_type "Accepted Wait"^^xsd:string .
+
+ont:Completed_Closed_17 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Completed"^^xsd:string ;
+    ont:Sub-status "Closed"^^xsd:string ;
+    ont:event_timestamp "2012-01-03T10:31:53+00:00"^^xsd:dateTime ;
+    ont:event_type "Completed Closed"^^xsd:string .
+
+ont:Completed_Closed_29 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Completed"^^xsd:string ;
+    ont:Sub-status "Closed"^^xsd:string ;
+    ont:event_timestamp "2012-01-05T13:09:00+00:00"^^xsd:dateTime ;
+    ont:event_type "Completed Closed"^^xsd:string .
+
+ont:Completed_Closed_43 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Completed"^^xsd:string ;
+    ont:Sub-status "Closed"^^xsd:string ;
+    ont:event_timestamp "2012-01-03T12:13:02+00:00"^^xsd:dateTime ;
+    ont:event_type "Completed Closed"^^xsd:string .
+
+ont:Completed_Closed_45 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-354039443 ;
+    ont:Status "Completed"^^xsd:string ;
+    ont:Sub-status "Closed"^^xsd:string ;
+    ont:event_timestamp "2012-01-30T11:29:51+00:00"^^xsd:dateTime ;
+    ont:event_type "Completed Closed"^^xsd:string .
+
+ont:Completed_Closed_51 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-357087417 ;
+    ont:Status "Completed"^^xsd:string ;
+    ont:Sub-status "Closed"^^xsd:string ;
+    ont:event_timestamp "2012-01-30T11:30:21+00:00"^^xsd:dateTime ;
+    ont:event_type "Completed Closed"^^xsd:string .
+
+ont:Incident_1-165554831 a ont:objects ;
+    ont:Incident_number "1-165554831"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-172473423 a ont:objects ;
+    ont:Incident_number "1-172473423"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-270427461 a ont:objects ;
+    ont:Incident_number "1-270427461"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_13 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-182640781 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2010-08-25T09:13:01+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_25 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-236817141 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2010-08-25T09:06:45+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_39 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-351314317 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2010-02-03T08:45:18+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_54 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:12:19+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_56 a ont:events ;
+    ont:Impact "High"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-359841262 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2010-03-11T13:12:46+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_62 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T07:44:34+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_64 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:05:42+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_66 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:13:32+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_68 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T08:37:51+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_70 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-15T09:34:36+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_74 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-22T08:37:42+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_76 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-22T13:29:42+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Queued_Awaiting_Assignment_79 a ont:events ;
+    ont:Impact "Medium"^^xsd:string ;
+    ont:Is_Part_Of_Trace ont:Incident_1-738300041 ;
+    ont:Status "Queued"^^xsd:string ;
+    ont:Sub-status "Awaiting Assignment"^^xsd:string ;
+    ont:event_timestamp "2012-05-23T08:48:56+00:00"^^xsd:dateTime ;
+    ont:event_type "Queued Awaiting Assignment"^^xsd:string .
+
+ont:Incident_1-147898401 a ont:objects ;
+    ont:Incident_number "1-147898401"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-230541365 a ont:objects ;
+    ont:Incident_number "1-230541365"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-345132462 a ont:objects ;
+    ont:Incident_number "1-345132462"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-351314317 a ont:objects ;
+    ont:Incident_number "1-351314317"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-182640781 a ont:objects ;
+    ont:Incident_number "1-182640781"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-236817141 a ont:objects ;
+    ont:Incident_number "1-236817141"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-359841262 a ont:objects ;
+    ont:Incident_number "1-359841262"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:Incident_1-738300041 a ont:objects ;
+    ont:Incident_number "1-738300041"^^xsd:string ;
+    ont:object_type "Incident"^^xsd:string .
+
+ont:events a owl:Class .
+
+ont:objects a owl:Class .
+
