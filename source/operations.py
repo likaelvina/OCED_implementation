@@ -1,110 +1,135 @@
 from rdflib import RDF, URIRef, Literal
+import urllib.parse
 
-def create_classes_and_properties(g, ont_ns, owl_ns, xsd_ns, descriptors):
+def create_classes(g, ont_ns, owl_ns, xsd_ns, descriptors):
     # Define classes
     events_uri = URIRef(ont_ns + "events")
-    objects_uri = URIRef(ont_ns + "objects")
-
     g.add((events_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_type_uri = URIRef(ont_ns + "event_type")
+    g.add((event_type_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_timestamp_uri = URIRef(ont_ns + "event_timestamp")
+    g.add((event_timestamp_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_attribute_name_uri = URIRef(ont_ns + "event_attribute_name")
+    g.add((event_attribute_name_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_attribute_value_uri = URIRef(ont_ns + "event_attribute_value")
+    g.add((event_attribute_value_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_relation_type_uri = URIRef(ont_ns + "event_relation_type")
+    g.add((event_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    event_related_to_uri = URIRef(ont_ns + "event_related_to")
+    g.add((event_related_to_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    objects_uri = URIRef(ont_ns + "objects")
     g.add((objects_uri, RDF.type, URIRef(owl_ns + "Class")))
 
-    # Define datatype properties
-    event_type_uri = URIRef(ont_ns + "event_type")
-    g.add((event_type_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-    g.add((event_type_uri, URIRef(owl_ns + "domain"), URIRef(events_uri)))
-    g.add((event_type_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + "string")))
-
     object_type_uri = URIRef(ont_ns + "object_type")
-    g.add((object_type_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-    g.add((object_type_uri, URIRef(owl_ns + "domain"), URIRef(objects_uri)))
-    g.add((object_type_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + "string")))
+    g.add((object_type_uri, RDF.type, URIRef(owl_ns + "Class")))
 
-    # Object having all DatatypeProperty names as keys, and the exact key in xml tag as value
-    names_to_xml_keys = {}
+    object_timestamp_uri = ""
+    descriptors = descriptors.items()
+    for key, value in descriptors:
+        if key == "objects" and hasattr(value, "object_timestamp"):
+            object_timestamp_uri = URIRef(ont_ns + "object_timestamp")
+            g.add((object_timestamp_uri, RDF.type, URIRef(owl_ns + "Class")))
+            return
 
-    for key, value in descriptors.items():
-        if key == "events":
-            names_to_xml_keys["events"] = value["keys"]
-            names_to_xml_keys["event_timestamp"] = value["event_timestamp"]
+    object_attribute_name_uri = URIRef(ont_ns + "object_attribute_name")
+    g.add((object_attribute_name_uri, RDF.type, URIRef(owl_ns + "Class")))
 
-            event_timestamp_uri = URIRef(ont_ns + "event_timestamp")
-            g.add((event_timestamp_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-            g.add((event_timestamp_uri, URIRef(owl_ns + "domain"), URIRef(events_uri)))
-            g.add((event_timestamp_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + "dateTime")))
+    object_attribute_value_uri = URIRef(ont_ns + "object_attribute_value")
+    g.add((object_attribute_value_uri, RDF.type, URIRef(owl_ns + "Class")))
 
+    object_relation_type_uri = URIRef(ont_ns + "object_relation_type")
+    g.add((object_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    object_related_to_uri = URIRef(ont_ns + "object_related_to")
+    g.add((object_related_to_uri, RDF.type, URIRef(owl_ns + "Class")))
+
+    for key, value in descriptors:
+        if key == "events": 
             for attribute in value["attributes"]:
-                names_to_xml_keys[attribute["event_attribute_name"]] = [attribute["event_attribute_value"]]
-
-                attribute_uri = URIRef(ont_ns + attribute["event_attribute_name"])
-                g.add((attribute_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-                g.add((attribute_uri, URIRef(owl_ns + "domain"), URIRef(events_uri)))
-                g.add((attribute_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + attribute["datatype"])))
+                event_attribute_name_instance_uri = URIRef(ont_ns + attribute["event_attribute_name"])
+                g.add((event_attribute_name_instance_uri, RDF.type, event_attribute_name_uri))
 
             for relation in value["relations"]:
-                relation_uri = URIRef(ont_ns + relation["relation_type"])
-                g.add((relation_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
-                g.add((relation_uri, URIRef(owl_ns + "domain"), URIRef(events_uri)))
-                g.add((relation_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + relation["related_to"])))
+                event_relation_type_instance_uri = URIRef(ont_ns + relation["event_relation_type"])
+                g.add((event_relation_type_instance_uri, RDF.type, event_relation_type_uri))
 
-        if key == "objects":
-            for obj in value:
-                names_to_xml_keys[obj["object_type"]] = obj["keys"]
+                event_related_to_instance_uri = URIRef(ont_ns + relation["event_related_to"])
+                g.add((event_related_to_instance_uri, RDF.type, event_related_to_uri))
 
-                object_timestamp = obj["object_type"] + "_timestamp"
-                names_to_xml_keys[object_timestamp] = obj["object_timestamp"]
-
-                object_timestamp_uri = URIRef(ont_ns + object_timestamp)
-                g.add((object_timestamp_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-                g.add((object_timestamp_uri, URIRef(owl_ns + "domain"), URIRef(objects_uri)))
-                g.add((object_timestamp_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + "dateTime")))
-
+        if key == "objects": 
+            for obj in value: 
                 for attribute in obj["attributes"]:
-                    names_to_xml_keys[attribute["object_attribute_name"]] = [attribute["object_attribute_value"]]
-
-                    attribute_uri = URIRef(ont_ns + attribute["object_attribute_name"])
-                    g.add((attribute_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
-                    g.add((attribute_uri, URIRef(owl_ns + "domain"), URIRef(objects_uri)))
-                    g.add((attribute_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + attribute["datatype"])))
+                    object_attribute_name_instance_uri = URIRef(ont_ns + attribute["object_attribute_name"])
+                    g.add((object_attribute_name_instance_uri, RDF.type, object_attribute_name_uri))
 
                 for relation in obj["relations"]:
-                    relation_uri = URIRef(ont_ns + relation["relation_type"])
-                    g.add((relation_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
-                    g.add((relation_uri, URIRef(owl_ns + "domain"), URIRef(objects_uri)))
-                    g.add((relation_uri, URIRef(owl_ns + "range"), URIRef(xsd_ns + relation["related_to"])))
+                    object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
+                    g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
 
-    return events_uri, objects_uri, event_type_uri, event_timestamp_uri, object_type_uri, names_to_xml_keys
+                    object_related_to_instance_uri = URIRef(ont_ns + relation["object_related_to"])
+                    g.add((object_related_to_instance_uri, RDF.type, object_related_to_uri))
 
-def create_trace_instances(g, ont_ns, xsd_ns, value, row, objects_uri, object_type_to_URI, object_type_uri, dataframe, index):
-    # Object instance
-    trace_instance_uri = URIRef(ont_ns + value["object_type"] + "_" + "_".join([str(row[f"case:{key}"]) for key in value["keys"] if key in row]))
-    g.add((trace_instance_uri, RDF.type, objects_uri))
+    has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
+    g.add((has_attribute_name_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
-    object_type_to_URI[value["object_type"]] = trace_instance_uri
+    has_attribute_value_uri = URIRef(ont_ns + "has_attribute_value")
+    g.add((has_attribute_value_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
-    # object_type
-    g.add((trace_instance_uri, object_type_uri, Literal(value["object_type"], datatype=URIRef(xsd_ns + "string"))))
+    is_part_of_event_uri = URIRef(ont_ns + "is_part_of_event")
+    g.add((is_part_of_event_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
-    # Trace attributes
-    for attribute in value["attributes"]:
-        if f"case:{attribute['object_attribute_value']}" in dataframe.columns:
-            g.add((trace_instance_uri, URIRef(ont_ns + attribute["object_attribute_name"]), Literal(row[f"case:{attribute['object_attribute_value']}"], datatype=URIRef(xsd_ns + attribute["datatype"]))))
+    has_event_type_uri = URIRef(ont_ns + "has_event_type")
+    g.add((has_event_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
-    return trace_instance_uri, object_type_to_URI
+    has_timestamp_uri = URIRef(ont_ns + "has_timestamp")
+    g.add((has_timestamp_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    
+    return has_timestamp_uri, has_event_type_uri, is_part_of_event_uri, has_attribute_name_uri,has_attribute_value_uri, events_uri, event_type_uri, event_timestamp_uri, event_attribute_name_uri, event_attribute_value_uri, event_relation_type_uri, event_related_to_uri, objects_uri, object_type_uri, object_timestamp_uri, object_attribute_name_uri, object_attribute_value_uri, object_relation_type_uri, object_related_to_uri
 
-def create_events_instances(g, ont_ns, xsd_ns, value, row, events_uri, object_type_to_URI, event_type_uri, event_timestamp_uri, names_to_xml_keys, index):
-    # Event instance
-    event_instance_uri = URIRef(ont_ns + "_".join(["_".join(str(row[key]).split(" ")) for key in value["keys"] if key in row]) + "_" + str(index + 1))
+def create_events_instances(has_timestamp_uri, has_event_type_uri, is_part_of_event_uri, has_attribute_value_uri, g, ont_ns, xsd_ns, value, row, object_type_to_URI, index,  events_uri, event_type_uri, event_timestamp_uri, event_attribute_name_uri, event_attribute_value_uri, event_relation_type_uri, event_related_to_uri, has_attribute_name_uri):
+    # Event instances
+    # event_instance_uri = URIRef(ont_ns + "_".join(["_".join(str(row[key]).split(" ")) for key in value["keys"] if key in row]) + "_" + str(index + 1))
+    # g.add((event_instance_uri, RDF.type, events_uri))
+
+    event_instance_uri = URIRef(ont_ns + "EventID_" + str(index + 1))
     g.add((event_instance_uri, RDF.type, events_uri))
+
+    event_type_instance_uri = URIRef(ont_ns + "_".join(["_".join(str(row[key]).split(" ")) for key in value["keys"] if key in row]))
+    g.add((event_type_instance_uri, RDF.type, event_type_uri))
+
+    g.add((event_instance_uri, has_event_type_uri, event_type_instance_uri))
+
+    iso8601_timestamp = row[value["event_timestamp"]].isoformat()
+    event_timestamp_instance_uri = URIRef(ont_ns + iso8601_timestamp)
+    g.add((event_timestamp_instance_uri, RDF.type, event_timestamp_uri))
+
+    g.add((event_instance_uri, has_timestamp_uri, event_timestamp_instance_uri))
 
     object_type_to_URI["events"] = event_instance_uri
 
-    # event_type, event_timestamp
-    g.add((event_instance_uri, event_type_uri, Literal(" ".join([row[key] for key in names_to_xml_keys["events"] if key in row]), datatype=URIRef(xsd_ns + "string"))))
-    g.add((event_instance_uri, event_timestamp_uri, Literal(row[names_to_xml_keys["event_timestamp"]], datatype=URIRef(xsd_ns + "dateTime"))))
-
-    # event attributes
     for attribute in value["attributes"]:
-        g.add((event_instance_uri, URIRef(ont_ns + attribute["event_attribute_name"]), Literal(row[attribute["event_attribute_value"]], datatype=URIRef(xsd_ns + attribute["datatype"]))))
+        # Combine the base URI and the encoded resource name to create the full URI
+        full_uri = ont_ns + urllib.parse.quote(row[attribute["event_attribute_value"]])
+        g.add((URIRef(full_uri), RDF.type, event_attribute_value_uri))
+
+        # TODO: Decide if we want to make every event_attr_value unique by adding a unique index to it
+        # Or we want event_attr_value to be like it is, and this way it can connect to more than 1 event
+        # Or if we want to add the values in the event instance 
+        g.add((event_instance_uri, has_attribute_value_uri, URIRef(full_uri)))
+        g.add((URIRef(full_uri), has_attribute_name_uri, URIRef(ont_ns + attribute["event_attribute_name"])))
+        g.add((URIRef(full_uri), is_part_of_event_uri, event_instance_uri))
+    
+    # for relation in value["relations"]:
+    #     full_uri = ont_ns + urllib.parse.quote(row[attribute["event_attribute_value"]])
+    #     g.add((URIRef(ont_ns), RDF.type, event_attribute_value_uri))
+
 
     return event_instance_uri, object_type_to_URI
 

@@ -1,6 +1,6 @@
 {
   "file_name": "indicents",
-  "domain": "example.org",
+  "IRI": "http://example.org",
   "data_description": "Incidents that happened between 2012-05-30 and 2006-11-07",
   "trace": {
     "keys": ["concept:name"],
@@ -8,8 +8,7 @@
     "attributes": [
       {
         "object_attribute_value": "concept:name",
-        "object_attribute_name": "Incident_number",
-        "datatype": "string"
+        "object_attribute_name": "Incident_number"
       }
     ]
   },
@@ -18,67 +17,55 @@
     "event_timestamp": "time:timestamp",
     "attributes": [
       {
-        "event_attribute_value": "concept:name",
-        "event_attribute_name": "Status",
-        "datatype": "string"
+        "event_attribute_value_selector": "concept:name",
+        "event_attribute_name": "Status"
       },
       {
         "event_attribute_value": "lifecycle:transition",
-        "event_attribute_name": "Sub-status",
-        "datatype": "string"
+        "event_attribute_name": "Sub-status"
       },
       {
         "event_attribute_value": "impact",
-        "event_attribute_name": "Impact",
-        "datatype": "string"
+        "event_attribute_name": "Impact"
       }
     ],
-    "relations": [
+    "relations_to_objects": [
       {
-        "relation_type": "Is_Part_Of_Trace",
-        "related_to": "Incident"
+        "event_relation_type": "has_product",
+        "event_related_to": "Product"
+      },
+      {
+        "event_relation_type": "has_support_team",
+        "event_related_to": "Support_Team_ST"
+      },
+      {
+        "event_relation_type": "has_support_team_responsible",
+        "event_related_to": "ST_responsible"
       }
     ]
   },
   "objects": [
     {
-      "keys": ["product"],
+      "identifier_selector": ["product"],
       "object_type": "Product",
-      "object_timestamp": "time:timestamp",
       "attributes": [
         {
           "object_attribute_value": "product",
-          "object_attribute_name": "Product_number",
-          "datatype": "string"
-        }
-      ],
-      "relations": [
-        {
-          "relation_type": "Is_Involved_In_Event",
-          "related_to": "events"
+          "object_attribute_name": "Product_number"
         }
       ]
     },
     {
       "keys": ["org:role", "oranization country"],
       "object_type": "Support_Team_ST",
-      "object_timestamp": "time:timestamp",
       "attributes": [
         {
           "object_attribute_value": "org:role",
-          "object_attribute_name": "Support_Team_function_division",
-          "datatype": "string"
+          "object_attribute_name": "Support_Team_function_division"
         },
         {
           "object_attribute_value": "oranization country",
-          "object_attribute_name": "Support_Team_country",
-          "datatype": "string"
-        }
-      ],
-      "relations": [
-        {
-          "relation_type": "Is_Supporting_Event",
-          "related_to": "events"
+          "object_attribute_name": "Support_Team_country"
         }
       ]
     },
@@ -89,22 +76,14 @@
       "attributes": [
         {
           "object_attribute_value": "org:resource",
-          "object_attribute_name": "ST_resp._person_first_name",
-          "datatype": "string"
+          "object_attribute_name": "ST_resp_person_first_name"
         },
         {
           "object_attribute_value": "resource country",
-          "object_attribute_name": "ST_resp._person_op_country",
-          "datatype": "string"
+          "object_attribute_name": "ST_resp_person_op_country"
         }
       ],
-      "relations": [
-        { "relation_type": "WORKS_FOR", "related_to": "Support_Team_ST" },
-        {
-          "relation_type": "Is_Responsible_For_Event",
-          "related_to": "events"
-        }
-      ]
+      "relations": [{ "object_relation_type": "WORKS_FOR", "object_related_to": "Support_Team_ST" }]
     }
   ]
 }
