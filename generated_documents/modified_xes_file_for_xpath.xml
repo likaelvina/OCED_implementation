@@ -1,0 +1,1044 @@
+<ns0:log xmlns:ns0="http://www.xes-standard.org/" xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7" position="0">
+	<ns0:extension name="MetaData_Time" prefix="meta_time" uri="http://www.xes-standard.org/meta_time.xesext" position="0/0" />
+	<ns0:extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext" position="0/1" />
+	<ns0:extension name="MetaData_LifeCycle" prefix="meta_life" uri="http://www.xes-standard.org/meta_life.xesext" position="0/2" />
+	<ns0:extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" position="0/3" />
+	<ns0:extension name="MetaData_Organization" prefix="meta_org" uri="http://www.xes-standard.org/meta_org.xesext" position="0/4" />
+	<ns0:extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" position="0/5" />
+	<ns0:extension name="MetaData_Concept" prefix="meta_concept" uri="http://www.xes-standard.org/meta_concept.xesext" position="0/6" />
+	<ns0:extension name="Completeness Metrics" prefix="meta_completeness" uri="http://www.xes-standard.org/meta_completeness.xesext" position="0/7" />
+	<ns0:extension name="MetaData_3TU" prefix="meta_3TU" uri="http://www.xes-standard.org/meta_3TU.xesext" position="0/8" />
+	<ns0:extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" position="0/9" />
+	<ns0:extension name="MetaData_General" prefix="meta_general" uri="http://www.xes-standard.org/meta_general.xesext" position="0/10" />
+	<ns0:global scope="trace" position="0/11">
+		<ns0:string key="concept:name" value="UNKNOWN" position="0/11/0" />
+	</ns0:global>
+	<ns0:global scope="event" position="0/12">
+		<ns0:date key="time:timestamp" value="1970-01-01T00:00:00+01:00" position="0/12/0" />
+		<ns0:string key="org:group" value="UNKNOWN" position="0/12/1" />
+		<ns0:string key="resource country" value="UNKNOWN" position="0/12/2" />
+		<ns0:string key="organization country" value="UNKNOWN" position="0/12/3" />
+		<ns0:string key="org:resource" value="UNKNOWN" position="0/12/4" />
+		<ns0:string key="organization involved" value="UNKNOWN" position="0/12/5" />
+		<ns0:string key="org:role" value="UNKNOWN" position="0/12/6" />
+		<ns0:string key="concept:name" value="UNKNOWN" position="0/12/7" />
+		<ns0:string key="impact" value="UNKNOWN" position="0/12/8" />
+		<ns0:string key="product" value="UNKNOWN" position="0/12/9" />
+		<ns0:string key="lifecycle:transition" value="UNKNOWN" position="0/12/10" />
+	</ns0:global>
+	<ns0:classifier name="Activity classifier" keys="concept:name lifecycle:transition" position="0/13" />
+	<ns0:classifier name="Resource classifier" keys="org:resource" position="0/14" />
+	<ns0:trace position="0/15">
+		<ns0:string key="concept:name" value="1-147898401" position="0/15/0" />
+		<ns0:event position="0/15/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/15/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/15/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/15/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/15/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/15/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/15/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/15/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/15/1/7" />
+			<ns0:date key="time:timestamp" value="2006-11-07T10:00:36+01:00" position="0/15/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/15/1/9" />
+		</ns0:event>
+		<ns0:event position="0/15/2">
+			<ns0:string key="resource country" value="Sweden" position="0/15/2/0" />
+			<ns0:string key="org:group" value="Org line A2" position="0/15/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/15/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/15/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/15/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/15/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/15/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/15/2/7" />
+			<ns0:date key="time:timestamp" value="2006-11-07T13:05:44+01:00" position="0/15/2/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/15/2/9" />
+		</ns0:event>
+		<ns0:event position="0/15/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/15/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/15/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/15/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/15/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/15/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/15/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/15/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/15/3/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:32+01:00" position="0/15/3/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/15/3/9" />
+		</ns0:event>
+		<ns0:event position="0/15/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/15/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/15/4/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/15/4/2" />
+			<ns0:string key="oranization country" value="cn" position="0/15/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/15/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/15/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/15/4/6" />
+			<ns0:string key="product" value="PROD753" position="0/15/4/7" />
+			<ns0:date key="time:timestamp" value="2011-09-03T07:09:09+02:00" position="0/15/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/15/4/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/16">
+		<ns0:string key="concept:name" value="1-165554831" position="0/16/0" />
+		<ns0:event position="0/16/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/16/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/16/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/16/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/16/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/16/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/16/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/16/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/16/1/7" />
+			<ns0:date key="time:timestamp" value="2007-03-20T09:06:25+01:00" position="0/16/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/16/1/9" />
+		</ns0:event>
+		<ns0:event position="0/16/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/16/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/16/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/16/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/16/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/16/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/16/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/16/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/16/2/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:31+01:00" position="0/16/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/16/2/9" />
+		</ns0:event>
+		<ns0:event position="0/16/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/16/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/16/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/16/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/16/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/16/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/16/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/16/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/16/3/7" />
+			<ns0:date key="time:timestamp" value="2011-09-03T07:10:53+02:00" position="0/16/3/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/16/3/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/17">
+		<ns0:string key="concept:name" value="1-172473423" position="0/17/0" />
+		<ns0:event position="0/17/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/17/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/17/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/17/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/17/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/17/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/17/1/5" />
+			<ns0:string key="impact" value="Low" position="0/17/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/17/1/7" />
+			<ns0:date key="time:timestamp" value="2007-05-10T16:21:54+02:00" position="0/17/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/17/1/9" />
+		</ns0:event>
+		<ns0:event position="0/17/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/17/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/17/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/17/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/17/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/17/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/17/2/5" />
+			<ns0:string key="impact" value="Low" position="0/17/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/17/2/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:33+01:00" position="0/17/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/17/2/9" />
+		</ns0:event>
+		<ns0:event position="0/17/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/17/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/17/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/17/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/17/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/17/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/17/3/5" />
+			<ns0:string key="impact" value="Low" position="0/17/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/17/3/7" />
+			<ns0:date key="time:timestamp" value="2011-09-03T07:10:59+02:00" position="0/17/3/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/17/3/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/18">
+		<ns0:string key="concept:name" value="1-182640781" position="0/18/0" />
+		<ns0:event position="0/18/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/1/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/1/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/18/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/1/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/1/7" />
+			<ns0:date key="time:timestamp" value="2007-07-25T14:21:05+02:00" position="0/18/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/18/1/9" />
+		</ns0:event>
+		<ns0:event position="0/18/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/2/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/2/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/18/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/2/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/2/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:32+01:00" position="0/18/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/18/2/9" />
+		</ns0:event>
+		<ns0:event position="0/18/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/3/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/3/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/3/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/18/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/3/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/3/7" />
+			<ns0:date key="time:timestamp" value="2010-08-25T11:13:01+02:00" position="0/18/3/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/18/3/9" />
+		</ns0:event>
+		<ns0:event position="0/18/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/4/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/4/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/18/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/4/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/4/7" />
+			<ns0:date key="time:timestamp" value="2011-09-05T09:24:13+02:00" position="0/18/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/18/4/9" />
+		</ns0:event>
+		<ns0:event position="0/18/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/5/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/5/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/5/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/18/5/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/5/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/5/7" />
+			<ns0:date key="time:timestamp" value="2011-11-14T16:10:25+01:00" position="0/18/5/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/18/5/9" />
+		</ns0:event>
+		<ns0:event position="0/18/6">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/6/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/6/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/6/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/6/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/6/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/18/6/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/6/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/6/7" />
+			<ns0:date key="time:timestamp" value="2012-01-03T11:30:35+01:00" position="0/18/6/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/18/6/9" />
+		</ns0:event>
+		<ns0:event position="0/18/7">
+			<ns0:string key="org:group" value="Org line A2" position="0/18/7/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/18/7/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/18/7/2" />
+			<ns0:string key="oranization country" value="se" position="0/18/7/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/18/7/4" />
+			<ns0:string key="concept:name" value="Completed" position="0/18/7/5" />
+			<ns0:string key="impact" value="Medium" position="0/18/7/6" />
+			<ns0:string key="product" value="PROD681" position="0/18/7/7" />
+			<ns0:date key="time:timestamp" value="2012-01-03T11:31:53+01:00" position="0/18/7/8" />
+			<ns0:string key="lifecycle:transition" value="Closed" position="0/18/7/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/19">
+		<ns0:string key="concept:name" value="1-230541365" position="0/19/0" />
+		<ns0:event position="0/19/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/19/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/19/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/19/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/19/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/19/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/19/1/5" />
+			<ns0:string key="impact" value="High" position="0/19/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/19/1/7" />
+			<ns0:date key="time:timestamp" value="2008-05-07T18:58:51+02:00" position="0/19/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/19/1/9" />
+		</ns0:event>
+		<ns0:event position="0/19/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/19/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/19/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/19/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/19/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/19/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/19/2/5" />
+			<ns0:string key="impact" value="High" position="0/19/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/19/2/7" />
+			<ns0:date key="time:timestamp" value="2008-10-06T16:44:37+02:00" position="0/19/2/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/19/2/9" />
+		</ns0:event>
+		<ns0:event position="0/19/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/19/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/19/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/19/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/19/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/19/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/19/3/5" />
+			<ns0:string key="impact" value="High" position="0/19/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/19/3/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:34+01:00" position="0/19/3/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/19/3/9" />
+		</ns0:event>
+		<ns0:event position="0/19/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/19/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/19/4/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/19/4/2" />
+			<ns0:string key="oranization country" value="cn" position="0/19/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/19/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/19/4/5" />
+			<ns0:string key="impact" value="High" position="0/19/4/6" />
+			<ns0:string key="product" value="PROD753" position="0/19/4/7" />
+			<ns0:date key="time:timestamp" value="2011-09-02T00:27:50+02:00" position="0/19/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/19/4/9" />
+		</ns0:event>
+		<ns0:event position="0/19/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/19/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/19/5/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/19/5/2" />
+			<ns0:string key="oranization country" value="cn" position="0/19/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/19/5/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/19/5/5" />
+			<ns0:string key="impact" value="High" position="0/19/5/6" />
+			<ns0:string key="product" value="PROD753" position="0/19/5/7" />
+			<ns0:date key="time:timestamp" value="2011-09-02T00:27:55+02:00" position="0/19/5/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/19/5/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/20">
+		<ns0:string key="concept:name" value="1-236817141" position="0/20/0" />
+		<ns0:event position="0/20/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/20/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/1/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/1/7" />
+			<ns0:date key="time:timestamp" value="2008-06-04T12:02:18+02:00" position="0/20/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/20/1/9" />
+		</ns0:event>
+		<ns0:event position="0/20/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/20/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/2/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/2/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:34+01:00" position="0/20/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/20/2/9" />
+		</ns0:event>
+		<ns0:event position="0/20/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/3/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/20/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/3/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/3/7" />
+			<ns0:date key="time:timestamp" value="2010-08-25T11:06:45+02:00" position="0/20/3/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/20/3/9" />
+		</ns0:event>
+		<ns0:event position="0/20/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/4/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/4/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/20/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/4/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/4/7" />
+			<ns0:date key="time:timestamp" value="2011-09-03T08:02:11+02:00" position="0/20/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/20/4/9" />
+		</ns0:event>
+		<ns0:event position="0/20/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/5/1" />
+			<ns0:string key="org:resource" value="Niklas" position="0/20/5/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/5/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/20/5/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/5/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/5/7" />
+			<ns0:date key="time:timestamp" value="2011-11-14T16:09:27+01:00" position="0/20/5/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/20/5/9" />
+		</ns0:event>
+		<ns0:event position="0/20/6">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/6/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/6/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/6/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/6/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/6/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/20/6/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/6/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/6/7" />
+			<ns0:date key="time:timestamp" value="2012-01-05T14:08:18+01:00" position="0/20/6/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/20/6/9" />
+		</ns0:event>
+		<ns0:event position="0/20/7">
+			<ns0:string key="org:group" value="Org line A2" position="0/20/7/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/20/7/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/20/7/2" />
+			<ns0:string key="oranization country" value="cn" position="0/20/7/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/20/7/4" />
+			<ns0:string key="concept:name" value="Completed" position="0/20/7/5" />
+			<ns0:string key="impact" value="Medium" position="0/20/7/6" />
+			<ns0:string key="product" value="PROD681" position="0/20/7/7" />
+			<ns0:date key="time:timestamp" value="2012-01-05T14:09:00+01:00" position="0/20/7/8" />
+			<ns0:string key="lifecycle:transition" value="Closed" position="0/20/7/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/21">
+		<ns0:string key="concept:name" value="1-270427461" position="0/21/0" />
+		<ns0:event position="0/21/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/21/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/21/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/21/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/21/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/21/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/21/1/5" />
+			<ns0:string key="impact" value="Low" position="0/21/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/21/1/7" />
+			<ns0:date key="time:timestamp" value="2008-11-13T11:01:04+01:00" position="0/21/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/21/1/9" />
+		</ns0:event>
+		<ns0:event position="0/21/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/21/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/21/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/21/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/21/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/21/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/21/2/5" />
+			<ns0:string key="impact" value="Low" position="0/21/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/21/2/7" />
+			<ns0:date key="time:timestamp" value="2009-12-02T14:24:35+01:00" position="0/21/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/21/2/9" />
+		</ns0:event>
+		<ns0:event position="0/21/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/21/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/21/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/21/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/21/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/21/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/21/3/5" />
+			<ns0:string key="impact" value="Low" position="0/21/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/21/3/7" />
+			<ns0:date key="time:timestamp" value="2011-11-14T15:57:27+01:00" position="0/21/3/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/21/3/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/22">
+		<ns0:string key="concept:name" value="1-345132462" position="0/22/0" />
+		<ns0:event position="0/22/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/22/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/22/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/22/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/22/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/22/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/22/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/22/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/22/1/7" />
+			<ns0:date key="time:timestamp" value="2010-01-14T10:34:54+01:00" position="0/22/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/22/1/9" />
+		</ns0:event>
+		<ns0:event position="0/22/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/22/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/22/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/22/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/22/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/22/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/22/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/22/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/22/2/7" />
+			<ns0:date key="time:timestamp" value="2010-01-27T10:43:29+01:00" position="0/22/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/22/2/9" />
+		</ns0:event>
+		<ns0:event position="0/22/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/22/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/22/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/22/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/22/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/22/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/22/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/22/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/22/3/7" />
+			<ns0:date key="time:timestamp" value="2010-02-03T10:20:05+01:00" position="0/22/3/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/22/3/9" />
+		</ns0:event>
+		<ns0:event position="0/22/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/22/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/22/4/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/22/4/2" />
+			<ns0:string key="oranization country" value="cn" position="0/22/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/22/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/22/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/22/4/6" />
+			<ns0:string key="product" value="PROD753" position="0/22/4/7" />
+			<ns0:date key="time:timestamp" value="2010-02-22T08:33:08+01:00" position="0/22/4/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/22/4/9" />
+		</ns0:event>
+		<ns0:event position="0/22/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/22/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/22/5/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/22/5/2" />
+			<ns0:string key="oranization country" value="cn" position="0/22/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/22/5/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/22/5/5" />
+			<ns0:string key="impact" value="Medium" position="0/22/5/6" />
+			<ns0:string key="product" value="PROD753" position="0/22/5/7" />
+			<ns0:date key="time:timestamp" value="2011-09-02T00:17:47+02:00" position="0/22/5/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/22/5/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/23">
+		<ns0:string key="concept:name" value="1-351314317" position="0/23/0" />
+		<ns0:event position="0/23/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/1/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/1/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/1/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/23/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/1/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/1/7" />
+			<ns0:date key="time:timestamp" value="2010-02-03T09:34:32+01:00" position="0/23/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/23/1/9" />
+		</ns0:event>
+		<ns0:event position="0/23/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/2/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/2/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/2/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/2/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/23/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/2/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/2/7" />
+			<ns0:date key="time:timestamp" value="2010-02-03T09:45:18+01:00" position="0/23/2/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/23/2/9" />
+		</ns0:event>
+		<ns0:event position="0/23/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/3/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/3/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/3/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/3/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/23/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/3/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/3/7" />
+			<ns0:date key="time:timestamp" value="2010-02-03T10:40:51+01:00" position="0/23/3/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/23/3/9" />
+		</ns0:event>
+		<ns0:event position="0/23/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/4/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/4/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/4/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/23/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/4/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/4/7" />
+			<ns0:date key="time:timestamp" value="2010-02-03T10:40:58+01:00" position="0/23/4/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/23/4/9" />
+		</ns0:event>
+		<ns0:event position="0/23/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/5/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/5/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/5/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/5/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/23/5/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/5/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/5/7" />
+			<ns0:date key="time:timestamp" value="2011-12-20T22:25:19+01:00" position="0/23/5/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/23/5/9" />
+		</ns0:event>
+		<ns0:event position="0/23/6">
+			<ns0:string key="org:group" value="Org line A2" position="0/23/6/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/23/6/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/23/6/2" />
+			<ns0:string key="oranization country" value="us" position="0/23/6/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/23/6/4" />
+			<ns0:string key="concept:name" value="Completed" position="0/23/6/5" />
+			<ns0:string key="impact" value="Medium" position="0/23/6/6" />
+			<ns0:string key="product" value="PROD98" position="0/23/6/7" />
+			<ns0:date key="time:timestamp" value="2012-01-03T13:13:02+01:00" position="0/23/6/8" />
+			<ns0:string key="lifecycle:transition" value="Closed" position="0/23/6/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/24">
+		<ns0:string key="concept:name" value="1-354039443" position="0/24/0" />
+		<ns0:event position="0/24/1">
+			<ns0:string key="org:group" value="Org line G3" position="0/24/1/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/24/1/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/24/1/2" />
+			<ns0:string key="oranization country" value="us" position="0/24/1/3" />
+			<ns0:string key="concept:name" value="Accepted" position="0/24/1/4" />
+			<ns0:string key="impact" value="Medium" position="0/24/1/5" />
+			<ns0:string key="product" value="PROD98" position="0/24/1/6" />
+			<ns0:date key="time:timestamp" value="2011-12-28T15:05:47+01:00" position="0/24/1/7" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/24/1/8" />
+		</ns0:event>
+		<ns0:event position="0/24/2">
+			<ns0:string key="org:group" value="Org line G3" position="0/24/2/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/24/2/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/24/2/2" />
+			<ns0:string key="oranization country" value="us" position="0/24/2/3" />
+			<ns0:string key="concept:name" value="Completed" position="0/24/2/4" />
+			<ns0:string key="impact" value="Medium" position="0/24/2/5" />
+			<ns0:string key="product" value="PROD98" position="0/24/2/6" />
+			<ns0:date key="time:timestamp" value="2012-01-30T12:29:51+01:00" position="0/24/2/7" />
+			<ns0:string key="lifecycle:transition" value="Closed" position="0/24/2/8" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/25">
+		<ns0:string key="concept:name" value="1-354350908" position="0/25/0" />
+		<ns0:event position="0/25/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/25/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/25/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/25/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/25/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/25/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/25/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/25/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/25/1/7" />
+			<ns0:date key="time:timestamp" value="2010-02-16T11:03:41+01:00" position="0/25/1/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/25/1/9" />
+		</ns0:event>
+		<ns0:event position="0/25/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/25/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/25/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/25/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/25/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/25/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/25/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/25/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/25/2/7" />
+			<ns0:date key="time:timestamp" value="2011-09-02T00:16:31+02:00" position="0/25/2/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/25/2/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/26">
+		<ns0:string key="concept:name" value="1-354376900" position="0/26/0" />
+		<ns0:event position="0/26/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/26/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/26/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/26/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/26/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/26/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/26/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/26/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/26/1/7" />
+			<ns0:date key="time:timestamp" value="2010-02-16T11:04:37+01:00" position="0/26/1/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/26/1/9" />
+		</ns0:event>
+		<ns0:event position="0/26/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/26/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/26/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/26/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/26/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/26/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/26/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/26/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/26/2/7" />
+			<ns0:date key="time:timestamp" value="2011-09-02T00:16:15+02:00" position="0/26/2/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/26/2/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/27">
+		<ns0:string key="concept:name" value="1-357087417" position="0/27/0" />
+		<ns0:event position="0/27/1">
+			<ns0:string key="org:group" value="Org line G3" position="0/27/1/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/27/1/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/27/1/2" />
+			<ns0:string key="oranization country" value="us" position="0/27/1/3" />
+			<ns0:string key="concept:name" value="Accepted" position="0/27/1/4" />
+			<ns0:string key="impact" value="Medium" position="0/27/1/5" />
+			<ns0:string key="product" value="PROD98" position="0/27/1/6" />
+			<ns0:date key="time:timestamp" value="2011-12-28T16:01:17+01:00" position="0/27/1/7" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/27/1/8" />
+		</ns0:event>
+		<ns0:event position="0/27/2">
+			<ns0:string key="org:group" value="Org line G3" position="0/27/2/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/27/2/1" />
+			<ns0:string key="org:resource" value="Ewa" position="0/27/2/2" />
+			<ns0:string key="oranization country" value="us" position="0/27/2/3" />
+			<ns0:string key="concept:name" value="Completed" position="0/27/2/4" />
+			<ns0:string key="impact" value="Medium" position="0/27/2/5" />
+			<ns0:string key="product" value="PROD98" position="0/27/2/6" />
+			<ns0:date key="time:timestamp" value="2012-01-30T12:30:21+01:00" position="0/27/2/7" />
+			<ns0:string key="lifecycle:transition" value="Closed" position="0/27/2/8" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/28">
+		<ns0:string key="concept:name" value="1-359841262" position="0/28/0" />
+		<ns0:event position="0/28/1">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/1/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/1/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/1/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/1/5" />
+			<ns0:string key="impact" value="High" position="0/28/1/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/1/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:06:34+01:00" position="0/28/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/28/1/9" />
+		</ns0:event>
+		<ns0:event position="0/28/2">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/2/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/2/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/2/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/2/5" />
+			<ns0:string key="impact" value="High" position="0/28/2/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/2/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:10:10+01:00" position="0/28/2/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/28/2/9" />
+		</ns0:event>
+		<ns0:event position="0/28/3">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/3/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/3/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/3/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/3/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/28/3/5" />
+			<ns0:string key="impact" value="High" position="0/28/3/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/3/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:12:19+01:00" position="0/28/3/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/28/3/9" />
+		</ns0:event>
+		<ns0:event position="0/28/4">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/4/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/28/4/1" />
+			<ns0:string key="org:resource" value="Pawel" position="0/28/4/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/4/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/4/5" />
+			<ns0:string key="impact" value="High" position="0/28/4/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/4/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:12:35+01:00" position="0/28/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/28/4/9" />
+		</ns0:event>
+		<ns0:event position="0/28/5">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/5/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/5/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/5/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/5/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/28/5/5" />
+			<ns0:string key="impact" value="High" position="0/28/5/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/5/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:12:46+01:00" position="0/28/5/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/28/5/9" />
+		</ns0:event>
+		<ns0:event position="0/28/6">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/6/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/28/6/1" />
+			<ns0:string key="org:resource" value="Pawel" position="0/28/6/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/6/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/6/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/6/5" />
+			<ns0:string key="impact" value="High" position="0/28/6/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/6/7" />
+			<ns0:date key="time:timestamp" value="2010-03-11T14:13:02+01:00" position="0/28/6/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/28/6/9" />
+		</ns0:event>
+		<ns0:event position="0/28/7">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/7/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/7/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/7/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/7/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/7/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/7/5" />
+			<ns0:string key="impact" value="High" position="0/28/7/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/7/7" />
+			<ns0:date key="time:timestamp" value="2010-07-20T09:25:18+02:00" position="0/28/7/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/28/7/9" />
+		</ns0:event>
+		<ns0:event position="0/28/8">
+			<ns0:string key="org:group" value="Org line A2" position="0/28/8/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/28/8/1" />
+			<ns0:string key="org:resource" value="Tomas" position="0/28/8/2" />
+			<ns0:string key="oranization country" value="cn" position="0/28/8/3" />
+			<ns0:string key="org:role" value="A2_2" position="0/28/8/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/28/8/5" />
+			<ns0:string key="impact" value="High" position="0/28/8/6" />
+			<ns0:string key="product" value="PROD753" position="0/28/8/7" />
+			<ns0:date key="time:timestamp" value="2011-09-05T09:28:42+02:00" position="0/28/8/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/28/8/9" />
+		</ns0:event>
+	</ns0:trace>
+	<ns0:trace position="0/29">
+		<ns0:string key="concept:name" value="1-738300041" position="0/29/0" />
+		<ns0:event position="0/29/1">
+			<ns0:string key="org:group" value="Org line C" position="0/29/1/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/1/1" />
+			<ns0:string key="org:resource" value="Prasad" position="0/29/1/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/1/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/1/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/1/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/1/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/1/7" />
+			<ns0:date key="time:timestamp" value="2012-05-02T11:04:02+02:00" position="0/29/1/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/1/9" />
+		</ns0:event>
+		<ns0:event position="0/29/2">
+			<ns0:string key="org:group" value="Org line C" position="0/29/2/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/2/1" />
+			<ns0:string key="org:resource" value="Prasad" position="0/29/2/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/2/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/2/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/2/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/2/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/2/7" />
+			<ns0:date key="time:timestamp" value="2012-05-02T11:09:06+02:00" position="0/29/2/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/29/2/9" />
+		</ns0:event>
+		<ns0:event position="0/29/3">
+			<ns0:string key="org:group" value="Org line C" position="0/29/3/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/3/1" />
+			<ns0:string key="org:resource" value="Prasad" position="0/29/3/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/3/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/3/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/3/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/3/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/3/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T09:44:34+02:00" position="0/29/3/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/3/9" />
+		</ns0:event>
+		<ns0:event position="0/29/4">
+			<ns0:string key="org:group" value="Org line C" position="0/29/4/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/4/1" />
+			<ns0:string key="org:resource" value="Jitender" position="0/29/4/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/4/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/4/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/4/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/4/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/4/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:02:01+02:00" position="0/29/4/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/4/9" />
+		</ns0:event>
+		<ns0:event position="0/29/5">
+			<ns0:string key="org:group" value="Org line C" position="0/29/5/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/5/1" />
+			<ns0:string key="org:resource" value="Prasad" position="0/29/5/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/5/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/5/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/5/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/5/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/5/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:05:42+02:00" position="0/29/5/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/5/9" />
+		</ns0:event>
+		<ns0:event position="0/29/6">
+			<ns0:string key="org:group" value="Org line C" position="0/29/6/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/6/1" />
+			<ns0:string key="org:resource" value="Jitender" position="0/29/6/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/6/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/6/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/6/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/6/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/6/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:06:03+02:00" position="0/29/6/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/6/9" />
+		</ns0:event>
+		<ns0:event position="0/29/7">
+			<ns0:string key="org:group" value="Org line A2" position="0/29/7/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/29/7/1" />
+			<ns0:string key="org:resource" value="Miroslaw" position="0/29/7/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/7/3" />
+			<ns0:string key="org:role" value="A2_1" position="0/29/7/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/7/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/7/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/7/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:13:32+02:00" position="0/29/7/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/7/9" />
+		</ns0:event>
+		<ns0:event position="0/29/8">
+			<ns0:string key="org:group" value="Org line A2" position="0/29/8/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/29/8/1" />
+			<ns0:string key="org:resource" value="Przemyslaw" position="0/29/8/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/8/3" />
+			<ns0:string key="org:role" value="A2_1" position="0/29/8/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/8/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/8/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/8/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:28:16+02:00" position="0/29/8/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/8/9" />
+		</ns0:event>
+		<ns0:event position="0/29/9">
+			<ns0:string key="org:group" value="Org line C" position="0/29/9/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/9/1" />
+			<ns0:string key="org:resource" value="Prasad" position="0/29/9/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/9/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/9/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/9/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/9/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/9/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:37:51+02:00" position="0/29/9/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/9/9" />
+		</ns0:event>
+		<ns0:event position="0/29/10">
+			<ns0:string key="org:group" value="Org line C" position="0/29/10/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/10/1" />
+			<ns0:string key="org:resource" value="Jitender" position="0/29/10/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/10/3" />
+			<ns0:string key="org:role" value="E_10" position="0/29/10/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/10/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/10/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/10/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T10:43:51+02:00" position="0/29/10/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/10/9" />
+		</ns0:event>
+		<ns0:event position="0/29/11">
+			<ns0:string key="org:group" value="Org line C" position="0/29/11/0" />
+			<ns0:string key="resource country" value="INDIA" position="0/29/11/1" />
+			<ns0:string key="org:resource" value="Pratap" position="0/29/11/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/11/3" />
+			<ns0:string key="org:role" value="E_4" position="0/29/11/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/11/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/11/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/11/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T11:34:36+02:00" position="0/29/11/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/11/9" />
+		</ns0:event>
+		<ns0:event position="0/29/12">
+			<ns0:string key="org:group" value="Org line C" position="0/29/12/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/12/1" />
+			<ns0:string key="org:resource" value="Joacim" position="0/29/12/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/12/3" />
+			<ns0:string key="org:role" value="E_4" position="0/29/12/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/12/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/12/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/12/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T11:51:25+02:00" position="0/29/12/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/12/9" />
+		</ns0:event>
+		<ns0:event position="0/29/13">
+			<ns0:string key="org:group" value="Org line C" position="0/29/13/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/13/1" />
+			<ns0:string key="org:resource" value="Joacim" position="0/29/13/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/13/3" />
+			<ns0:string key="org:role" value="E_4" position="0/29/13/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/13/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/13/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/13/7" />
+			<ns0:date key="time:timestamp" value="2012-05-15T12:58:54+02:00" position="0/29/13/8" />
+			<ns0:string key="lifecycle:transition" value="Wait" position="0/29/13/9" />
+		</ns0:event>
+		<ns0:event position="0/29/14">
+			<ns0:string key="org:group" value="Org line A2" position="0/29/14/0" />
+			<ns0:string key="resource country" value="POLAND" position="0/29/14/1" />
+			<ns0:string key="org:resource" value="Przemyslaw" position="0/29/14/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/14/3" />
+			<ns0:string key="org:role" value="A2_1" position="0/29/14/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/14/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/14/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/14/7" />
+			<ns0:date key="time:timestamp" value="2012-05-22T10:28:28+02:00" position="0/29/14/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/14/9" />
+		</ns0:event>
+		<ns0:event position="0/29/15">
+			<ns0:string key="org:group" value="Org line C" position="0/29/15/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/15/1" />
+			<ns0:string key="org:resource" value="Gitt" position="0/29/15/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/15/3" />
+			<ns0:string key="org:role" value="E_2" position="0/29/15/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/15/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/15/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/15/7" />
+			<ns0:date key="time:timestamp" value="2012-05-22T10:37:42+02:00" position="0/29/15/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/15/9" />
+		</ns0:event>
+		<ns0:event position="0/29/16">
+			<ns0:string key="org:group" value="Org line C" position="0/29/16/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/16/1" />
+			<ns0:string key="org:resource" value="Urban" position="0/29/16/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/16/3" />
+			<ns0:string key="org:role" value="E_2" position="0/29/16/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/16/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/16/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/16/7" />
+			<ns0:date key="time:timestamp" value="2012-05-22T11:26:41+02:00" position="0/29/16/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/16/9" />
+		</ns0:event>
+		<ns0:event position="0/29/17">
+			<ns0:string key="org:group" value="Org line C" position="0/29/17/0" />
+			<ns0:string key="resource country" value="Belgium" position="0/29/17/1" />
+			<ns0:string key="org:resource" value="Els" position="0/29/17/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/17/3" />
+			<ns0:string key="org:role" value="C_2" position="0/29/17/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/17/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/17/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/17/7" />
+			<ns0:date key="time:timestamp" value="2012-05-22T15:29:42+02:00" position="0/29/17/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/17/9" />
+		</ns0:event>
+		<ns0:event position="0/29/18">
+			<ns0:string key="org:group" value="Org line C" position="0/29/18/0" />
+			<ns0:string key="resource country" value="Belgium" position="0/29/18/1" />
+			<ns0:string key="org:resource" value="Jo" position="0/29/18/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/18/3" />
+			<ns0:string key="org:role" value="C_2" position="0/29/18/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/18/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/18/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/18/7" />
+			<ns0:date key="time:timestamp" value="2012-05-23T10:34:38+02:00" position="0/29/18/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/29/18/9" />
+		</ns0:event>
+		<ns0:event position="0/29/19">
+			<ns0:string key="org:group" value="Org line C" position="0/29/19/0" />
+			<ns0:string key="resource country" value="Belgium" position="0/29/19/1" />
+			<ns0:string key="org:resource" value="Els" position="0/29/19/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/19/3" />
+			<ns0:string key="org:role" value="E_2" position="0/29/19/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/19/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/19/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/19/7" />
+			<ns0:date key="time:timestamp" value="2012-05-23T10:46:31+02:00" position="0/29/19/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/19/9" />
+		</ns0:event>
+		<ns0:event position="0/29/20">
+			<ns0:string key="org:group" value="Org line C" position="0/29/20/0" />
+			<ns0:string key="resource country" value="Belgium" position="0/29/20/1" />
+			<ns0:string key="org:resource" value="Els" position="0/29/20/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/20/3" />
+			<ns0:string key="org:role" value="C_2" position="0/29/20/4" />
+			<ns0:string key="concept:name" value="Queued" position="0/29/20/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/20/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/20/7" />
+			<ns0:date key="time:timestamp" value="2012-05-23T10:48:56+02:00" position="0/29/20/8" />
+			<ns0:string key="lifecycle:transition" value="Awaiting Assignment" position="0/29/20/9" />
+		</ns0:event>
+		<ns0:event position="0/29/21">
+			<ns0:string key="org:group" value="Org line C" position="0/29/21/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/21/1" />
+			<ns0:string key="org:resource" value="Lars" position="0/29/21/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/21/3" />
+			<ns0:string key="org:role" value="C_2" position="0/29/21/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/21/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/21/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/21/7" />
+			<ns0:date key="time:timestamp" value="2012-05-23T10:50:34+02:00" position="0/29/21/8" />
+			<ns0:string key="lifecycle:transition" value="Assigned" position="0/29/21/9" />
+		</ns0:event>
+		<ns0:event position="0/29/22">
+			<ns0:string key="org:group" value="Org line C" position="0/29/22/0" />
+			<ns0:string key="resource country" value="Sweden" position="0/29/22/1" />
+			<ns0:string key="org:resource" value="Lars" position="0/29/22/2" />
+			<ns0:string key="oranization country" value="be" position="0/29/22/3" />
+			<ns0:string key="org:role" value="C_2" position="0/29/22/4" />
+			<ns0:string key="concept:name" value="Accepted" position="0/29/22/5" />
+			<ns0:string key="impact" value="Medium" position="0/29/22/6" />
+			<ns0:string key="product" value="PROD509" position="0/29/22/7" />
+			<ns0:date key="time:timestamp" value="2012-05-30T15:07:15+02:00" position="0/29/22/8" />
+			<ns0:string key="lifecycle:transition" value="In Progress" position="0/29/22/9" />
+		</ns0:event>
+	</ns0:trace>
+</ns0:log>

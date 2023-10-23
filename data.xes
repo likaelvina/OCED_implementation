@@ -50,8 +50,8 @@
 			<string key="lifecycle:transition" value="In Progress"/>
 		</event>
 		<event>
-			<string key="org:group" value="Org line A2"/>
 			<string key="resource country" value="Sweden"/>
+			<string key="org:group" value="Org line A2"/>
 			<string key="org:resource" value="Tomas"/>
 			<string key="oranization country" value="cn"/>
 			<string key="org:role" value="A2_2"/>

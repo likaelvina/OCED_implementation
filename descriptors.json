@@ -1,89 +1,104 @@
 {
-  "file_name": "indicents",
-  "IRI": "http://example.org",
-  "data_description": "Incidents that happened between 2012-05-30 and 2006-11-07",
-  "trace": {
-    "keys": ["concept:name"],
-    "object_type": "Incident",
-    "attributes": [
-      {
-        "object_attribute_value": "concept:name",
-        "object_attribute_name": "Incident_number"
-      }
-    ]
+  "general_information_related_to_event_log": {
+    "file_name": "indicents",
+    "IRI": "http://elvina.lika.al"
   },
-  "events": {
-    "keys": ["concept:name", "lifecycle:transition"],
-    "event_timestamp": "time:timestamp",
-    "attributes": [
-      {
-        "event_attribute_value_selector": "concept:name",
-        "event_attribute_name": "Status"
-      },
-      {
-        "event_attribute_value": "lifecycle:transition",
-        "event_attribute_name": "Sub-status"
-      },
-      {
-        "event_attribute_value": "impact",
-        "event_attribute_name": "Impact"
-      }
-    ],
-    "relations_to_objects": [
-      {
-        "event_relation_type": "has_product",
-        "event_related_to": "Product"
-      },
-      {
-        "event_relation_type": "has_support_team",
-        "event_related_to": "Support_Team_ST"
-      },
-      {
-        "event_relation_type": "has_support_team_responsible",
-        "event_related_to": "ST_responsible"
-      }
-    ]
-  },
-  "objects": [
-    {
-      "identifier_selector": ["product"],
-      "object_type": "Product",
+  "referred_infomation_from_event_log": {
+    "events": {
+      "event_type_selector": ["concept:name", "lifecycle:transition"],
+      "event_timestamp": "time:timestamp",
       "attributes": [
         {
-          "object_attribute_value": "product",
-          "object_attribute_name": "Product_number"
-        }
-      ]
-    },
-    {
-      "keys": ["org:role", "oranization country"],
-      "object_type": "Support_Team_ST",
-      "attributes": [
-        {
-          "object_attribute_value": "org:role",
-          "object_attribute_name": "Support_Team_function_division"
+          "event_attribute_value_selector": "concept:name",
+          "event_attribute_name": "Status"
         },
         {
-          "object_attribute_value": "oranization country",
-          "object_attribute_name": "Support_Team_country"
-        }
-      ]
-    },
-    {
-      "keys": ["org:resource", "resource country"],
-      "object_type": "ST_responsible",
-      "object_timestamp": "time:timestamp",
-      "attributes": [
-        {
-          "object_attribute_value": "org:resource",
-          "object_attribute_name": "ST_resp_person_first_name"
+          "event_attribute_value_selector": "lifecycle:transition",
+          "event_attribute_name": "Sub-status"
         },
         {
-          "object_attribute_value": "resource country",
-          "object_attribute_name": "ST_resp_person_op_country"
+          "event_attribute_value_selector": "impact",
+          "event_attribute_name": "Impact"
         }
       ],
-      "relations": [{ "object_relation_type": "WORKS_FOR", "object_related_to": "Support_Team_ST" }]
+      "relations_to_objects": [
+        {
+          "event_relation_type": "has_product",
+          "event_related_to": "Product"
+        },
+        {
+          "event_relation_type": "has_support_team",
+          "event_related_to": "Support_Team_ST"
+        },
+        {
+          "event_relation_type": "has_support_team_responsible",
+          "event_related_to": "ST_responsible"
+        },
+        {
+          "event_relation_type": "is_part_of_case",
+          "event_related_to": "Incident"
+        }
+      ]
+    },
+    "objects": [
+      {
+        "object_identifier_selector": ["product"],
+        "object_type": "Product",
+        "attributes": [
+          {
+            "object_attribute_value_selector": "product",
+            "object_attribute_name": "Product_number"
+          }
+        ]
+      },
+      {
+        "object_identifier_selector": ["org:role", "oranization country"],
+        "object_type": "Support_Team_ST",
+        "attributes": [
+          {
+            "object_attribute_value_selector": "org:role",
+            "object_attribute_name": "Support_Team_function_division"
+          },
+          {
+            "object_attribute_value_selector": "oranization country",
+            "object_attribute_name": "Support_Team_country"
+          }
+        ]
+      },
+      {
+        "object_identifier_selector": ["org:resource", "resource country"],
+        "object_type": "ST_responsible",
+        "attributes": [
+          {
+            "object_attribute_value_selector": "org:resource",
+            "object_attribute_name": "ST_resp_person_first_name"
+          },
+          {
+            "object_attribute_value_selector": "resource country",
+            "object_attribute_name": "ST_resp_person_op_country"
+          }
+        ]
+      },
+      {
+        "is_trace": true,
+        "object_identifier_selector": ["case:concept:name"],
+        "object_type": "Incident",
+        "attributes": [
+          {
+            "object_attribute_value_selector": "case:concept:name",
+            "object_attribute_name": "Incident_number"
+          }
+        ]
+      }
+    ]
+  },
+  "injected_information_to_OCED_model": {
+    "objects_relation": {
+      "ST_responsible": {
+        "object_identifier_selector": ["org:resource", "resource country"],
+        "object_type": "ST_responsible",
+        "relations": [{ "object_relation_type": "WORKS_FOR", "object_related_to": "Support_Team_ST" }]
+      }
     }
-  ]
+  }
 }

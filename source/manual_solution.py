@@ -1,15 +1,13 @@
 import json
 import pm4py
 import urllib.parse
-from rdflib import RDF, URIRef, Literal, Graph
+from rdflib import RDF, URIRef, Graph
 
-def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
+def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     # Load XES file
-    # log = pm4py.read_xes("bpi_challenge_2013_open_problems.xes")
     log = pm4py.read_xes(xes_file_path)
     # Get file data
     dataframe = pm4py.convert_to_dataframe(log)
-    print(dataframe)
 
     # Load descriptors file
     with open(descriptors_file_path, 'r') as json_file:
@@ -18,53 +16,67 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
 
     # Validate JSON file so that it has the proper information
     errors = []
-    if not "events" in descriptors:
+
+    if not "referred_infomation_from_event_log" in descriptors:
+        errors.append("You need to have referred_infomation_from_event_log in the descriptor file!")
+
+    if not "injected_information_to_OCED_model" in descriptors:
+        errors.append("You need to have injected_information_to_OCED_model in the descriptor file!")
+
+    if len(errors) > 0:
+        print(errors)
+        return
+    
+    referred = descriptors["referred_infomation_from_event_log"]
+    injected = descriptors["injected_information_to_OCED_model"]
+
+    if not "events" in referred:
         errors.append("You need to have event data in the descriptor file!")
 
-    if not "objects" in descriptors:
+    if not "objects" in referred:
         errors.append("You need to have objects data in the descriptor file!")
 
-    if "events" in descriptors:
-        if not isinstance(descriptors["events"], dict):
+    if "events" in referred:
+        if not isinstance(referred["events"], dict):
             errors.append("events should be an object!")
         else: 
-            if not "keys" in descriptors["events"]:
-                errors.append("You need to have event keys in the descriptor file, they represent the value of Event Type!")
-            if not "event_timestamp" in descriptors["events"]:
+            if not "event_type_selector" in referred["events"]:
+                errors.append("You need to have event_type_selector in the descriptor file, they represent the value of Event Type!")
+            if not "event_timestamp" in referred["events"]:
                 errors.append("You need to have event_timestamp in the descriptor file, it represents the Event Timestamp!")
-            for attr in descriptors["events"]["attributes"]:
-                if not "event_attribute_value" in attr or not "event_attribute_name" in attr:
-                    errors.append("You need to have event_attribute_value and event_attribute_name for each attribute in the descriptor file!")
+            for attr in referred["events"]["attributes"]:
+                if not "event_attribute_value_selector" in attr or not "event_attribute_name" in attr:
+                    errors.append("You need to have event_attribute_value_selector and event_attribute_name for each attribute in the descriptor file!")
                     break
-            for relation in descriptors["events"]["relations"]:
+            for relation in referred["events"]["relations_to_objects"]:
                 if not "event_relation_type" in relation or not "event_related_to" in relation:
                     errors.append("You need to have event_relation_type and event_related_to for each relation in the descriptor file!")
                     break
 
-    if "objects" in descriptors:
-        if not isinstance(descriptors["objects"], list):
+    if "objects" in referred:
+        if not isinstance(referred["objects"], list):
             errors.append("objects should be array!")
         else: 
-            for obj in descriptors["objects"]:
+            for obj in referred["objects"]:
                 if not "object_type" in obj:
                     errors.append("You need to have object_type data in the descriptor file for each object!")
-                if not "keys" in obj:
-                    errors.append("You need to have keys data in the descriptor file for each object!")
+                if not "object_identifier_selector" in obj:
+                    errors.append("You need to have object_identifier_selector in the descriptor file for each object!")
                 for attr in obj["attributes"]:
-                    if not "object_attribute_value" in attr or not "object_attribute_name" in attr:
-                        errors.append("You need to have object_attribute_value and object_attribute_name for each attribute in the descriptor file!")
+                    if not "object_attribute_value_selector" in attr or not "object_attribute_name" in attr:
+                        errors.append("You need to have object_attribute_value_selector and object_attribute_name for each attribute in the descriptor file!")
                         break
                 if "relations" in obj:
                     for relation in obj["relations"]:
                         if not "object_relation_type" in relation or not "object_related_to" in relation:
                             errors.append("You need to have object_relation_type and object_related_to for each relation in the descriptor file!")
                             break
-    
+
     if len(errors) > 0:
         return
 
-    file_name = descriptors["file_name"]
-    IRI = descriptors["IRI"]
+    file_name = descriptors["general_information_related_to_event_log"]["file_name"]
+    IRI = descriptors["general_information_related_to_event_log"]["IRI"]
 
     # Create an RDF graph
     g = Graph()
@@ -72,6 +84,7 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
     # Define namespaces
     ont_ns = f"{IRI}/ontology#"
     owl_ns = "http://www.w3.org/2002/07/owl#"
+    rdf_ns = "http://www.w3.org/2000/01/rdf-schema#"
     g.bind("ont", ont_ns)
 
     # Define classes
@@ -109,18 +122,17 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
     g.add((object_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
 
     involves_object_uri = URIRef(ont_ns + "relation_involves_object")
-    g.add((involves_object_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((involves_object_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
-    # TODO: Don;t need to cycle for event_attribute_name
-    for key, value in descriptors.items():
+    for key, value in referred.items():
         if key == "events": 
             for attribute in value["attributes"]:
                 event_attribute_name_instance_uri = URIRef(ont_ns + attribute["event_attribute_name"])
                 g.add((event_attribute_name_instance_uri, RDF.type, event_attribute_name_uri))
 
-            for relation in value["relations"]:
+            for relation in value["relations_to_objects"]:
                 event_relation_type_uri = URIRef(ont_ns + relation["event_relation_type"])
-                g.add((event_relation_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+                g.add((event_relation_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
         if key == "objects": 
             for obj in value: 
@@ -133,29 +145,62 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
                         object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
                         g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
 
+
+    if "objects_relation" in injected:
+        for rel, rel_val in injected["objects_relation"].items():
+            if "relations" in rel_val:
+                for relation in rel_val["relations"]:
+                    object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
+                    g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
+
     has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
-    g.add((has_attribute_name_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((has_attribute_name_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
     has_attribute_value_uri = URIRef(ont_ns + "has_attribute_value")
-    g.add((has_attribute_value_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((has_attribute_value_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
     has_event_type_uri = URIRef(ont_ns + "has_event_type")
-    g.add((has_event_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((has_event_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
     has_timestamp_uri = URIRef(ont_ns + "has_timestamp")
-    g.add((has_timestamp_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((has_timestamp_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
 
     has_object_type_uri = URIRef(ont_ns + "has_object_type")
-    g.add((has_object_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+    g.add((has_object_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+
+    has_position_uri = URIRef(ont_ns + "has_position")
+    g.add((has_position_uri, RDF.type, URIRef(rdf_ns + "DatatypeProperty")))
+
+    allTraces = []
+    matching_objects = [obj for obj in referred["objects"] if "is_trace" in obj and obj["is_trace"] is True]
+    if len(matching_objects) > 0:
+        traceKey = matching_objects[0]["object_identifier_selector"]
+    else: 
+        traceKey = ""
+
+    traceId = 0
+    eventId = 0
+
+    attributes_positions = {}
+    for index, col_name in enumerate(dataframe.columns):
+        attributes_positions[col_name]= index
 
     # Add instances for the classes and properties based on the data file we have
     for index, row in dataframe.iterrows():
+        traceValue = "_".join(["_".join(str(row[key]).split(" ")) for key in traceKey if key in row])
+        if not traceValue in allTraces:
+            allTraces.append(traceValue)
+            traceId += 1
+            eventId = 1
+        else: 
+            eventId += 1
+
         key = "events"
-        value = descriptors[key]       
+        value = referred[key]       
         event_instance_uri = URIRef(ont_ns + "EventID_" + str(index + 1))
         g.add((event_instance_uri, RDF.type, events_uri))
 
-        event_type_instance_uri = URIRef(ont_ns + "_".join(["_".join(str(row[key]).split(" ")) for key in value["keys"] if key in row]))
+        event_type_instance_uri = URIRef(ont_ns + "_".join(["_".join(str(row[key]).split(" ")) for key in value["event_type_selector"] if key in row]))
         g.add((event_type_instance_uri, RDF.type, event_type_uri))
 
         g.add((event_instance_uri, has_event_type_uri, event_type_instance_uri))
@@ -168,22 +213,21 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
 
         for attribute in value["attributes"]:
             # Combine the base URI and the encoded resource name to create the full URI
-            full_uri = ont_ns + urllib.parse.quote(row[attribute["event_attribute_value"]])
-            # TODO: Decide if we want to make every event_attr_value unique by adding a unique index to it
-            # Or we want event_attr_value to be like it is, and this way it can connect to more than 1 event
-            # Or if we want to add the values in the event instance 
+            full_uri = ont_ns + urllib.parse.quote(str(row[attribute["event_attribute_value_selector"]]))
             g.add((URIRef(full_uri), RDF.type, event_attribute_value_uri))
             g.add((URIRef(full_uri), has_attribute_name_uri, URIRef(ont_ns + attribute["event_attribute_name"])))
 
             g.add((event_instance_uri, has_attribute_value_uri, URIRef(full_uri)))
+            g.add((URIRef(full_uri), has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}/Attribute:{attributes_positions[attribute['event_attribute_value_selector']]}")))
+
+        g.add((event_instance_uri, has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}")))
             
         key = "objects"
-        value = descriptors[key]  
+        value = referred[key]  
         all_event_objects = {}
         object_ids = {}
         for i, obj in enumerate(value):          
-            # object_instance_uri = URIRef(ont_ns + "ObjectID_" + str(index + 1) + "_" + str(i + 1))
-            object_id = "_".join(["_".join(str(row[key]).split(" ")) for key in obj["keys"] if key in row])
+            object_id = "OBJ_" + "_".join(["_".join(str(row[key]).split(" ")) for key in obj["object_identifier_selector"] if key in row])
             object_instance_uri = URIRef(ont_ns + object_id)
             g.add((object_instance_uri, RDF.type, objects_uri))
 
@@ -197,40 +241,40 @@ def convert_xes_to_rdf(xes_file_path, descriptors_file_path):
 
             for attribute in obj["attributes"]:
                 # Combine the base URI and the encoded resource name to create the full URI
-                full_uri = ont_ns + urllib.parse.quote(str(row[attribute["object_attribute_value"]]))
-                # TODO: Same question as for Events Attributes
+                full_uri = ont_ns + urllib.parse.quote(str(row[attribute["object_attribute_value_selector"]]))
                 g.add((URIRef(full_uri), RDF.type, object_attribute_value_uri))
                 g.add((URIRef(full_uri), has_attribute_name_uri, URIRef(ont_ns + attribute["object_attribute_name"])))
                 g.add((object_instance_uri, has_attribute_value_uri, URIRef(full_uri)))
+                g.add((URIRef(full_uri), has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}/Attribute:{attributes_positions[attribute['object_attribute_value_selector']]}")))
 
-        for i, obj in enumerate(value):      
-            if "relations" in obj:    
-                for relation in obj["relations"]:
-                    object_id = "_".join(["_".join(str(row[key]).split(" ")) for key in obj["keys"] if key in row])
-                    current_object_instance_uri = URIRef(ont_ns + object_id)
-                    related_to_instance_uri = all_event_objects[relation["object_related_to"]]
+        if "objects_relation" in injected:
+            for rel, rel_val in injected["objects_relation"].items():
+                if "relations" in rel_val:
+                    for relation in rel_val["relations"]:
+                        current_object_instance_uri = URIRef(ont_ns + object_ids[rel])
+                        related_to_instance_uri = all_event_objects[relation["object_related_to"]]
 
-                    relation_instance_uri = URIRef(ont_ns + f"{object_id}_{object_ids[relation['object_related_to']]}")
-                    g.add((relation_instance_uri, RDF.type, object_relation_uri))
+                        relation_instance_uri = URIRef(ont_ns + f"{object_ids[rel]}_{object_ids[relation['object_related_to']]}")
+                        g.add((relation_instance_uri, RDF.type, URIRef(ont_ns + f"{relation['object_relation_type']}")))
 
-                    g.add((relation_instance_uri, involves_object_uri, current_object_instance_uri))
-                    g.add((relation_instance_uri, involves_object_uri, related_to_instance_uri))
+                        g.add((relation_instance_uri, involves_object_uri, current_object_instance_uri))
+                        g.add((relation_instance_uri, involves_object_uri, related_to_instance_uri))
 
         # Now add the Event Relations because now all Object Instances are created and we can have the proper connections
-        for relation in descriptors["events"]["relations"]:
-            g.add((event_instance_uri, URIRef(ont_ns + relation["event_relation_type"]), all_event_objects[relation["event_related_to"]]))
+        for relation in referred["events"]["relations_to_objects"]:
+            g.add((event_instance_uri, URIRef(ont_ns + relation["event_relation_type"]), all_event_objects[f"{relation['event_related_to']}"]))
 
     # Create an ElementTree from the root
     rdf_xml = g.serialize(format="xml")
 
-    rdf_file_path = f"{file_name}_data_to_rdf.rdf"
+    rdf_file_path = f"generated_documents/{file_name}_data_to_rdf.rdf"
     with open(rdf_file_path, "w", encoding="utf-8") as file:
         file.write(rdf_xml)
     print(f"RDF/XML content saved to {rdf_file_path}")
 
     rdf_data = g.serialize(format="turtle")
     # Serialize the graph to a file
-    with open(f"{file_name}_data_to_owl.owl", "w", encoding="utf-8") as f:
+    with open(f"generated_documents/{file_name}_data_to_owl.owl", "w", encoding="utf-8") as f:
         f.write(rdf_data)
 
     print(f"OWL content saved to {file_name}_data_to_owl.owl")
