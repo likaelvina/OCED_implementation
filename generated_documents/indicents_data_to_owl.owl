@@ -1,0 +1,2393 @@
+@prefix ont: <http://elvina.lika.al/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ont:EventID_1 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2006-11-07T09:00:36+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-147898401 .
+
+ont:EventID_10 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Low ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:3/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-03T05:10:59+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-172473423 .
+
+ont:EventID_11 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:1> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2007-07-25T12:21:05+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_12 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:2> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:32+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_13 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:3> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-08-25T09:13:01+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_14 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:4> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-05T07:24:13+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_15 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:5> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-11-14T15:10:25+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_16 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:6> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-03T10:30:35+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_17 a ont:events ;
+    ont:has_attribute_value ont:Closed,
+        ont:Completed,
+        ont:Medium ;
+    ont:has_event_type ont:Completed_Closed ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:7> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_se ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-03T10:31:53+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-182640781 .
+
+ont:EventID_18 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2008-05-07T16:58:51+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-230541365 .
+
+ont:EventID_19 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2008-10-06T14:44:37+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-230541365 .
+
+ont:EventID_2 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2006-11-07T12:05:44+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-147898401 .
+
+ont:EventID_20 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:34+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-230541365 .
+
+ont:EventID_21 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:4> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-01T22:27:50+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-230541365 .
+
+ont:EventID_22 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:5> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-01T22:27:55+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-230541365 .
+
+ont:EventID_23 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:1> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2008-06-04T10:02:18+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_24 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:2> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:34+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_25 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:3> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-08-25T09:06:45+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_26 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:4> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-03T06:02:11+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_27 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:5> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Niklas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-11-14T15:09:27+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_28 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:6> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-05T13:08:18+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_29 a ont:events ;
+    ont:has_attribute_value ont:Closed,
+        ont:Completed,
+        ont:Medium ;
+    ont:has_event_type ont:Completed_Closed ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:7> ;
+    ont:has_product ont:OBJ_PROD681 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-05T13:09:00+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-236817141 .
+
+ont:EventID_3 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:32+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-147898401 .
+
+ont:EventID_30 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Low ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:7/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2008-11-13T10:01:04+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-270427461 .
+
+ont:EventID_31 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Low,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:7/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:35+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-270427461 .
+
+ont:EventID_32 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Low ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:7/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-11-14T14:57:27+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-270427461 .
+
+ont:EventID_33 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-01-14T09:34:54+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-345132462 .
+
+ont:EventID_34 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-01-27T09:43:29+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-345132462 .
+
+ont:EventID_35 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-03T09:20:05+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-345132462 .
+
+ont:EventID_36 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:4> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-22T07:33:08+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-345132462 .
+
+ont:EventID_37 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:5> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-01T22:17:47+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-345132462 .
+
+ont:EventID_38 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:1> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-03T08:34:32+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_39 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:2> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-03T08:45:18+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_4 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:4> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-03T05:09:09+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-147898401 .
+
+ont:EventID_40 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:3> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-03T09:40:51+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_41 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:4> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-03T09:40:58+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_42 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:5> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-12-20T21:25:19+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_43 a ont:events ;
+    ont:has_attribute_value ont:Closed,
+        ont:Completed,
+        ont:Medium ;
+    ont:has_event_type ont:Completed_Closed ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:6> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_A2_2_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-03T12:13:02+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-351314317 .
+
+ont:EventID_44 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_nan_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-12-28T14:05:47+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354039443 .
+
+ont:EventID_45 a ont:events ;
+    ont:has_attribute_value ont:Closed,
+        ont:Completed,
+        ont:Medium ;
+    ont:has_event_type ont:Completed_Closed ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:2> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_nan_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-30T11:29:51+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354039443 .
+
+ont:EventID_46 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:11/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-16T10:03:41+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354350908 .
+
+ont:EventID_47 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:11/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-01T22:16:31+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354350908 .
+
+ont:EventID_48 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:12/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-02-16T10:04:37+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354376900 .
+
+ont:EventID_49 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:12/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-01T22:16:15+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-354376900 .
+
+ont:EventID_5 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:2/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2007-03-20T08:06:25+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-165554831 .
+
+ont:EventID_50 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:13/Event:1> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_nan_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-12-28T15:01:17+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-357087417 .
+
+ont:EventID_51 a ont:events ;
+    ont:has_attribute_value ont:Closed,
+        ont:Completed,
+        ont:Medium ;
+    ont:has_event_type ont:Completed_Closed ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:13/Event:2> ;
+    ont:has_product ont:OBJ_PROD98 ;
+    ont:has_support_team ont:OBJ_nan_us ;
+    ont:has_support_team_responsible ont:OBJ_Ewa_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-01-30T11:30:21+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-357087417 .
+
+ont:EventID_52 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:06:34+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_53 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:10:10+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_54 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:High,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:12:19+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_55 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:4> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Pawel_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:12:35+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_56 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:High,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:5> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:12:46+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_57 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:6> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Pawel_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-03-11T13:13:02+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_58 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:High ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:7> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2010-07-20T07:25:18+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_59 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:High,
+        ont:In%20Progress ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:8> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-05T07:28:42+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-359841262 .
+
+ont:EventID_6 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:2/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:31+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-165554831 .
+
+ont:EventID_60 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Prasad_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-02T09:04:02+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_61 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:2> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Prasad_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-02T09:09:06+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_62 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:3> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Prasad_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T07:44:34+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_63 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:4> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Jitender_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:02:01+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_64 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:5> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Prasad_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:05:42+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_65 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:6> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Jitender_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:06:03+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_66 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:7> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_A2_1_be ;
+    ont:has_support_team_responsible ont:OBJ_Miroslaw_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:13:32+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_67 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:8> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_A2_1_be ;
+    ont:has_support_team_responsible ont:OBJ_Przemyslaw_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:28:16+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_68 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:9> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Prasad_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:37:51+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_69 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:10> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_10_be ;
+    ont:has_support_team_responsible ont:OBJ_Jitender_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T08:43:51+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_7 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:2/Event:3> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2011-09-03T05:10:53+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-165554831 .
+
+ont:EventID_70 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:11> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_4_be ;
+    ont:has_support_team_responsible ont:OBJ_Pratap_INDIA ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T09:34:36+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_71 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:12> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_4_be ;
+    ont:has_support_team_responsible ont:OBJ_Joacim_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T09:51:25+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_72 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Medium,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:13> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_4_be ;
+    ont:has_support_team_responsible ont:OBJ_Joacim_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-15T10:58:54+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_73 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:14> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_A2_1_be ;
+    ont:has_support_team_responsible ont:OBJ_Przemyslaw_POLAND ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-22T08:28:28+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_74 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:15> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Gitt_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-22T08:37:42+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_75 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:16> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Urban_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-22T09:26:41+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_76 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:17> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_C_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Els_Belgium ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-22T13:29:42+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_77 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:18> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_C_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Jo_Belgium ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-23T08:34:38+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_78 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:19> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_E_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Els_Belgium ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-23T08:46:31+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_79 a ont:events ;
+    ont:has_attribute_value ont:Awaiting%20Assignment,
+        ont:Medium,
+        ont:Queued ;
+    ont:has_event_type ont:Queued_Awaiting_Assignment ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:20> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_C_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Els_Belgium ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-23T08:48:56+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_8 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Low ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:3/Event:1> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2007-05-10T14:21:54+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-172473423 .
+
+ont:EventID_80 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Assigned,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_Assigned ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:21> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_C_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Lars_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-23T08:50:34+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_81 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted_In_Progress ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:22> ;
+    ont:has_product ont:OBJ_PROD509 ;
+    ont:has_support_team ont:OBJ_C_2_be ;
+    ont:has_support_team_responsible ont:OBJ_Lars_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2012-05-30T13:07:15+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-738300041 .
+
+ont:EventID_9 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:Low,
+        ont:Wait ;
+    ont:has_event_type ont:Accepted_Wait ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:3/Event:2> ;
+    ont:has_product ont:OBJ_PROD753 ;
+    ont:has_support_team ont:OBJ_A2_2_cn ;
+    ont:has_support_team_responsible ont:OBJ_Tomas_Sweden ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2009-12-02T13:24:33+00:00> ;
+    ont:is_part_of_case ont:OBJ_1-172473423 .
+
+ont:OBJ_Els_Belgium_OBJ_C_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_C_2_be,
+        ont:OBJ_Els_Belgium .
+
+ont:OBJ_Els_Belgium_OBJ_E_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_2_be,
+        ont:OBJ_Els_Belgium .
+
+ont:OBJ_Ewa_POLAND_OBJ_A2_2_us a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_2_us,
+        ont:OBJ_Ewa_POLAND .
+
+ont:OBJ_Ewa_POLAND_OBJ_nan_us a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_Ewa_POLAND,
+        ont:OBJ_nan_us .
+
+ont:OBJ_Gitt_Sweden_OBJ_E_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_2_be,
+        ont:OBJ_Gitt_Sweden .
+
+ont:OBJ_Jitender_Sweden_OBJ_E_10_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_10_be,
+        ont:OBJ_Jitender_Sweden .
+
+ont:OBJ_Jo_Belgium_OBJ_C_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_C_2_be,
+        ont:OBJ_Jo_Belgium .
+
+ont:OBJ_Joacim_Sweden_OBJ_E_4_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_4_be,
+        ont:OBJ_Joacim_Sweden .
+
+ont:OBJ_Lars_Sweden_OBJ_C_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_C_2_be,
+        ont:OBJ_Lars_Sweden .
+
+ont:OBJ_Miroslaw_POLAND_OBJ_A2_1_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_1_be,
+        ont:OBJ_Miroslaw_POLAND .
+
+ont:OBJ_Niklas_Sweden_OBJ_A2_2_cn a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_2_cn,
+        ont:OBJ_Niklas_Sweden .
+
+ont:OBJ_Niklas_Sweden_OBJ_A2_2_se a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_2_se,
+        ont:OBJ_Niklas_Sweden .
+
+ont:OBJ_Pawel_POLAND_OBJ_A2_2_cn a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_2_cn,
+        ont:OBJ_Pawel_POLAND .
+
+ont:OBJ_Prasad_Sweden_OBJ_E_10_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_10_be,
+        ont:OBJ_Prasad_Sweden .
+
+ont:OBJ_Pratap_INDIA_OBJ_E_4_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_4_be,
+        ont:OBJ_Pratap_INDIA .
+
+ont:OBJ_Przemyslaw_POLAND_OBJ_A2_1_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_1_be,
+        ont:OBJ_Przemyslaw_POLAND .
+
+ont:OBJ_Tomas_Sweden_OBJ_A2_2_cn a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_A2_2_cn,
+        ont:OBJ_Tomas_Sweden .
+
+ont:OBJ_Urban_Sweden_OBJ_E_2_be a ont:WORKS_FOR ;
+    ont:relation_involves_object ont:OBJ_E_2_be,
+        ont:OBJ_Urban_Sweden .
+
+ont:has_attribute_name a rdfs:ObjectProperty .
+
+ont:has_attribute_value a rdfs:ObjectProperty .
+
+ont:has_event_type a rdfs:ObjectProperty .
+
+ont:has_object_type a rdfs:ObjectProperty .
+
+ont:has_position a rdfs:DatatypeProperty .
+
+ont:has_product a rdfs:ObjectProperty .
+
+ont:has_support_team a rdfs:ObjectProperty .
+
+ont:has_support_team_responsible a rdfs:ObjectProperty .
+
+ont:has_timestamp a rdfs:ObjectProperty .
+
+ont:is_part_of_case a rdfs:ObjectProperty .
+
+ont:object_relation a owl:Class .
+
+ont:relation_involves_object a rdfs:ObjectProperty .
+
+ont:1-147898401 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:10> .
+
+ont:1-165554831 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:10> .
+
+ont:1-172473423 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:10> .
+
+ont:1-182640781 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:10> .
+
+ont:1-230541365 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:10> .
+
+ont:1-236817141 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:10> .
+
+ont:1-270427461 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:10> .
+
+ont:1-345132462 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:10> .
+
+ont:1-351314317 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:10> .
+
+ont:1-354039443 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:10> .
+
+ont:1-354350908 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:10> .
+
+ont:1-354376900 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:10> .
+
+ont:1-357087417 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:10> .
+
+ont:1-359841262 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:10> .
+
+ont:1-738300041 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Incident_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:10>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:10> .
+
+<http://elvina.lika.al/ontology#2006-11-07T09:00:36+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2006-11-07T12:05:44+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2007-03-20T08:06:25+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2007-05-10T14:21:54+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2007-07-25T12:21:05+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2008-05-07T16:58:51+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2008-06-04T10:02:18+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2008-10-06T14:44:37+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2008-11-13T10:01:04+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2009-12-02T13:24:31+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2009-12-02T13:24:33+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2009-12-02T13:24:35+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-01-14T09:34:54+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-01-27T09:43:29+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-03T08:34:32+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-03T08:45:18+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-03T09:20:05+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-03T09:40:51+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-03T09:40:58+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-16T10:03:41+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-16T10:04:37+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-02-22T07:33:08+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:06:34+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:10:10+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:12:19+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:12:35+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:12:46+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-03-11T13:13:02+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-07-20T07:25:18+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-08-25T09:06:45+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2010-08-25T09:13:01+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-01T22:16:15+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-01T22:16:31+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-01T22:17:47+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-01T22:27:50+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-01T22:27:55+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-03T05:09:09+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-03T05:10:53+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-03T05:10:59+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-03T06:02:11+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-05T07:24:13+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-09-05T07:28:42+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-11-14T14:57:27+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-11-14T15:09:27+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-11-14T15:10:25+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-12-20T21:25:19+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-12-28T14:05:47+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2011-12-28T15:01:17+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-03T10:30:35+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-03T10:31:53+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-03T12:13:02+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-05T13:08:18+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-05T13:09:00+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-30T11:29:51+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-01-30T11:30:21+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-02T09:04:02+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-02T09:09:06+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T07:44:34+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:02:01+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:05:42+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:06:03+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:13:32+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:28:16+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:37:51+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T08:43:51+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T09:34:36+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T09:51:25+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-15T10:58:54+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-22T08:28:28+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-22T08:37:42+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-22T09:26:41+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-22T13:29:42+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-23T08:34:38+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-23T08:46:31+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-23T08:48:56+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-23T08:50:34+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2012-05-30T13:07:15+00:00> a ont:event_timestamp .
+
+ont:A2_1 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:4> .
+
+ont:C_2 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:4> .
+
+ont:E_10 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:4> .
+
+ont:E_2 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:4> .
+
+ont:E_4 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:4> .
+
+ont:Els a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:2> .
+
+ont:Ewa a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:2> .
+
+ont:Gitt a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:2> .
+
+ont:INDIA a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_op_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:1> .
+
+ont:Jitender a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:2> .
+
+ont:Jo a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:2> .
+
+ont:Joacim a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:2> .
+
+ont:Lars a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:2> .
+
+ont:Miroslaw a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:2> .
+
+ont:Niklas a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:2> .
+
+ont:PROD509 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Product_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:7> .
+
+ont:PROD681 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Product_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:7> .
+
+ont:PROD753 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Product_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:7> .
+
+ont:PROD98 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Product_number ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:7>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:7> .
+
+ont:Pawel a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:2> .
+
+ont:Prasad a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:2> .
+
+ont:Pratap a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:2> .
+
+ont:Przemyslaw a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:2> .
+
+ont:Tomas a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:2>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:2> .
+
+ont:Urban a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:2> .
+
+ont:cn a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:3> .
+
+ont:nan a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:4> .
+
+ont:object_relation_type a owl:Class .
+
+ont:se a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:3> .
+
+<http://elvina.lika.al/ontology#2009-12-02T13:24:32+00:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2009-12-02T13:24:34+00:00> a ont:event_timestamp .
+
+ont:Belgium a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_op_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:1> .
+
+ont:OBJ_1-354039443 a ont:objects ;
+    ont:has_attribute_value ont:1-354039443 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-354350908 a ont:objects ;
+    ont:has_attribute_value ont:1-354350908 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-354376900 a ont:objects ;
+    ont:has_attribute_value ont:1-354376900 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-357087417 a ont:objects ;
+    ont:has_attribute_value ont:1-357087417 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_Gitt_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Gitt,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Jo_Belgium a ont:objects ;
+    ont:has_attribute_value ont:Belgium,
+        ont:Jo ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Miroslaw_POLAND a ont:objects ;
+    ont:has_attribute_value ont:Miroslaw,
+        ont:POLAND ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Pratap_INDIA a ont:objects ;
+    ont:has_attribute_value ont:INDIA,
+        ont:Pratap ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Urban_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Sweden,
+        ont:Urban ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:us a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:3> .
+
+ont:A2_2 a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:4>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:4> .
+
+ont:Impact a ont:event_attribute_name .
+
+ont:OBJ_1-165554831 a ont:objects ;
+    ont:has_attribute_value ont:1-165554831 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-172473423 a ont:objects ;
+    ont:has_attribute_value ont:1-172473423 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-270427461 a ont:objects ;
+    ont:has_attribute_value ont:1-270427461 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_Joacim_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Joacim,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Lars_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Lars,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Pawel_POLAND a ont:objects ;
+    ont:has_attribute_value ont:POLAND,
+        ont:Pawel ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_Przemyslaw_POLAND a ont:objects ;
+    ont:has_attribute_value ont:POLAND,
+        ont:Przemyslaw ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:Status a ont:event_attribute_name .
+
+ont:event_attribute_name a owl:Class .
+
+ont:OBJ_1-147898401 a ont:objects ;
+    ont:has_attribute_value ont:1-147898401 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_Jitender_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Jitender,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:POLAND a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_op_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:1> .
+
+ont:Product a ont:object_type .
+
+ont:Product_number a ont:object_attribute_name .
+
+ont:ST_resp_person_op_country a ont:object_attribute_name .
+
+ont:Support_Team_country a ont:object_attribute_name .
+
+ont:object_type a owl:Class .
+
+ont:Closed a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:9> .
+
+ont:Completed a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:5> .
+
+ont:Completed_Closed a ont:event_type .
+
+ont:OBJ_1-230541365 a ont:objects ;
+    ont:has_attribute_value ont:1-230541365 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-345132462 a ont:objects ;
+    ont:has_attribute_value ont:1-345132462 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_A2_1_be a ont:objects ;
+    ont:has_attribute_value ont:A2_1,
+        ont:be ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:OBJ_E_4_be a ont:objects ;
+    ont:has_attribute_value ont:E_4,
+        ont:be ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:OBJ_Els_Belgium a ont:objects ;
+    ont:has_attribute_value ont:Belgium,
+        ont:Els ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_nan_us a ont:objects ;
+    ont:has_attribute_value ont:nan,
+        ont:us ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:Sub-status a ont:event_attribute_name .
+
+ont:be a ont:object_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:3>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:3> .
+
+ont:event_type a owl:Class .
+
+ont:Low a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Impact ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:6> .
+
+ont:OBJ_1-351314317 a ont:objects ;
+    ont:has_attribute_value ont:1-351314317 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_E_2_be a ont:objects ;
+    ont:has_attribute_value ont:E_2,
+        ont:be ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:OBJ_Prasad_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Prasad,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:object_attribute_name a owl:Class .
+
+ont:Accepted_Assigned a ont:event_type .
+
+ont:Assigned a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:9> .
+
+ont:OBJ_1-182640781 a ont:objects ;
+    ont:has_attribute_value ont:1-182640781 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_1-236817141 a ont:objects ;
+    ont:has_attribute_value ont:1-236817141 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_A2_2_us a ont:objects ;
+    ont:has_attribute_value ont:A2_2,
+        ont:us ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:Support_Team_function_division a ont:object_attribute_name .
+
+ont:OBJ_1-359841262 a ont:objects ;
+    ont:has_attribute_value ont:1-359841262 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_A2_2_se a ont:objects ;
+    ont:has_attribute_value ont:A2_2,
+        ont:se ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:OBJ_C_2_be a ont:objects ;
+    ont:has_attribute_value ont:C_2,
+        ont:be ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:Sweden a ont:object_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_op_country ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:1>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:1> .
+
+ont:Support_Team_ST a ont:object_type .
+
+ont:OBJ_E_10_be a ont:objects ;
+    ont:has_attribute_value ont:E_10,
+        ont:be ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:OBJ_Niklas_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Niklas,
+        ont:Sweden ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:OBJ_PROD98 a ont:objects ;
+    ont:has_attribute_value ont:PROD98 ;
+    ont:has_object_type ont:Product .
+
+ont:event_attribute_value a owl:Class .
+
+ont:OBJ_Ewa_POLAND a ont:objects ;
+    ont:has_attribute_value ont:Ewa,
+        ont:POLAND ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:Accepted_Wait a ont:event_type .
+
+ont:Awaiting%20Assignment a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:9> .
+
+ont:High a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Impact ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:6> .
+
+ont:Queued a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:14/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:5> .
+
+ont:Queued_Awaiting_Assignment a ont:event_type .
+
+ont:Wait a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:9> .
+
+ont:OBJ_PROD681 a ont:objects ;
+    ont:has_attribute_value ont:PROD681 ;
+    ont:has_object_type ont:Product .
+
+ont:Incident a ont:object_type .
+
+ont:Incident_number a ont:object_attribute_name .
+
+ont:ST_resp_person_first_name a ont:object_attribute_name .
+
+ont:ST_responsible a ont:object_type .
+
+ont:WORKS_FOR a ont:object_relation_type .
+
+ont:OBJ_1-738300041 a ont:objects ;
+    ont:has_attribute_value ont:1-738300041 ;
+    ont:has_object_type ont:Incident .
+
+ont:OBJ_PROD509 a ont:objects ;
+    ont:has_attribute_value ont:PROD509 ;
+    ont:has_object_type ont:Product .
+
+ont:OBJ_PROD753 a ont:objects ;
+    ont:has_attribute_value ont:PROD753 ;
+    ont:has_object_type ont:Product .
+
+ont:OBJ_Tomas_Sweden a ont:objects ;
+    ont:has_attribute_value ont:Sweden,
+        ont:Tomas ;
+    ont:has_object_type ont:ST_responsible .
+
+ont:Accepted_In_Progress a ont:event_type .
+
+ont:In%20Progress a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:9>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:9> .
+
+ont:objects a owl:Class .
+
+ont:OBJ_A2_2_cn a ont:objects ;
+    ont:has_attribute_value ont:A2_2,
+        ont:cn ;
+    ont:has_object_type ont:Support_Team_ST .
+
+ont:object_attribute_value a owl:Class .
+
+ont:Medium a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Impact ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:11/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:15/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:17/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:20/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:7/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:9/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:7/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:7/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:2/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:6>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:6/Attribute:6> .
+
+ont:Accepted a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Status ;
+    ont:has_position <http://elvina.lika.al/ontology#Trace:1/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:1/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:10/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:11/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:12/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:13/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:6/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:7/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:14/Event:8/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:10/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:12/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:13/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:14/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:16/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:18/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:19/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:21/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:22/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:6/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:15/Event:8/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:2/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:3/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:4/Event:6/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:5/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:6/Event:6/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:7/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:2/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:8/Event:5/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:1/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:3/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:4/Attribute:5>,
+        <http://elvina.lika.al/ontology#Trace:9/Event:5/Attribute:5> .
+
+ont:event_timestamp a owl:Class .
+
+ont:events a owl:Class .
+
