@@ -1,0 +1,109 @@
+@prefix ont: <http://elvina.lika.al/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ont:1-147898401 a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Incident_number .
+
+ont:A2_2 a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_function_division .
+
+ont:EventID_event_id1 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted%20In%20Progress ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2006-11-07T10:00:36+01:00> .
+
+ont:EventID_event_id2 a ont:events ;
+    ont:has_attribute_value ont:Accepted,
+        ont:In%20Progress,
+        ont:Medium ;
+    ont:has_event_type ont:Accepted%20In%20Progress ;
+    ont:has_timestamp <http://elvina.lika.al/ontology#2006-11-07T13:05:44+01:00> .
+
+ont:PROD753 a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Product_number .
+
+ont:Sweden a ont:event_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_op_country .
+
+ont:Tomas a ont:event_attribute_value ;
+    ont:has_attribute_name ont:ST_resp_person_first_name .
+
+ont:WORKS_FOR a ont:object_relation_type .
+
+ont:cn a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Support_Team_country .
+
+ont:event_involves_object a rdfs:ObjectProperty .
+
+ont:has_attribute_name a rdfs:ObjectProperty .
+
+ont:has_attribute_value a rdfs:ObjectProperty .
+
+ont:has_event_type a rdfs:ObjectProperty .
+
+ont:has_object_type a rdfs:ObjectProperty .
+
+ont:has_position a rdfs:DatatypeProperty .
+
+ont:has_timestamp a rdfs:ObjectProperty .
+
+ont:object_attribute_value a owl:Class .
+
+ont:object_relation a owl:Class .
+
+ont:object_type a owl:Class .
+
+ont:objects a owl:Class .
+
+ont:relation_involves_object a rdfs:ObjectProperty .
+
+<http://elvina.lika.al/ontology#2006-11-07T10:00:36+01:00> a ont:event_timestamp .
+
+<http://elvina.lika.al/ontology#2006-11-07T13:05:44+01:00> a ont:event_timestamp .
+
+ont:Impact a ont:event_attribute_name .
+
+ont:Incident_number a ont:object_attribute_name .
+
+ont:Product_number a ont:object_attribute_name .
+
+ont:ST_resp_person_first_name a ont:object_attribute_name .
+
+ont:ST_resp_person_op_country a ont:object_attribute_name .
+
+ont:Status a ont:event_attribute_name .
+
+ont:Sub-status a ont:event_attribute_name .
+
+ont:Support_Team_country a ont:object_attribute_name .
+
+ont:Support_Team_function_division a ont:object_attribute_name .
+
+ont:event_type a owl:Class .
+
+ont:object_relation_type a owl:Class .
+
+ont:Accepted a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Status .
+
+ont:Accepted%20In%20Progress a ont:event_type .
+
+ont:In%20Progress a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Sub-status .
+
+ont:Medium a ont:event_attribute_value ;
+    ont:has_attribute_name ont:Impact .
+
+ont:event_timestamp a owl:Class .
+
+ont:events a owl:Class .
+
+ont:event_attribute_name a owl:Class .
+
+ont:object_attribute_name a owl:Class .
+
+ont:event_attribute_value a owl:Class .
+
