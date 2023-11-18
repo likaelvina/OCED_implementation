@@ -112,6 +112,7 @@
     }
   },
   "object_relation_type": ["WORKS_FOR"],
+  
   "event_x_object": [
     { "event_id": "event_id1", "object_id": "object_PROD753" },
     { "event_id": "event_id1", "object_id": "object_A2_1_cn" },

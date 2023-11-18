@@ -122,7 +122,7 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     g.add((object_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
 
     involves_object_uri = URIRef(ont_ns + "relation_involves_object")
-    g.add((involves_object_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((involves_object_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     for key, value in referred.items():
         if key == "events": 
@@ -132,7 +132,7 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
 
             for relation in value["relations_to_objects"]:
                 event_relation_type_uri = URIRef(ont_ns + relation["event_relation_type"])
-                g.add((event_relation_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+                g.add((event_relation_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
         if key == "objects": 
             for obj in value: 
@@ -154,22 +154,22 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
                     g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
 
     has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
-    g.add((has_attribute_name_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_attribute_name_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_attribute_value_uri = URIRef(ont_ns + "has_attribute_value")
-    g.add((has_attribute_value_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_attribute_value_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_event_type_uri = URIRef(ont_ns + "has_event_type")
-    g.add((has_event_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_event_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_timestamp_uri = URIRef(ont_ns + "has_timestamp")
-    g.add((has_timestamp_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_timestamp_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_object_type_uri = URIRef(ont_ns + "has_object_type")
-    g.add((has_object_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_object_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_position_uri = URIRef(ont_ns + "has_position")
-    g.add((has_position_uri, RDF.type, URIRef(rdf_ns + "DatatypeProperty")))
+    g.add((has_position_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
 
     allTraces = []
     matching_objects = [obj for obj in referred["objects"] if "is_trace" in obj and obj["is_trace"] is True]

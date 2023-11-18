@@ -1,6 +1,5 @@
 @prefix ont: <http://elvina.lika.al/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ont:EventID_1 a ont:events ;
     ont:has_attribute_value ont:Accepted,
@@ -1046,29 +1045,29 @@ ont:OBJ_Urban_Sweden_OBJ_E_2_be a ont:WORKS_FOR ;
     ont:relation_involves_object ont:OBJ_E_2_be,
         ont:OBJ_Urban_Sweden .
 
-ont:has_attribute_name a rdfs:ObjectProperty .
+ont:has_attribute_name a owl:ObjectProperty .
 
-ont:has_attribute_value a rdfs:ObjectProperty .
+ont:has_attribute_value a owl:ObjectProperty .
 
-ont:has_event_type a rdfs:ObjectProperty .
+ont:has_event_type a owl:ObjectProperty .
 
-ont:has_object_type a rdfs:ObjectProperty .
+ont:has_object_type a owl:ObjectProperty .
 
-ont:has_position a rdfs:DatatypeProperty .
+ont:has_position a owl:DatatypeProperty .
 
-ont:has_product a rdfs:ObjectProperty .
+ont:has_product a owl:ObjectProperty .
 
-ont:has_support_team a rdfs:ObjectProperty .
+ont:has_support_team a owl:ObjectProperty .
 
-ont:has_support_team_responsible a rdfs:ObjectProperty .
+ont:has_support_team_responsible a owl:ObjectProperty .
 
-ont:has_timestamp a rdfs:ObjectProperty .
+ont:has_timestamp a owl:ObjectProperty .
 
-ont:is_part_of_case a rdfs:ObjectProperty .
+ont:is_part_of_case a owl:ObjectProperty .
 
 ont:object_relation a owl:Class .
 
-ont:relation_involves_object a rdfs:ObjectProperty .
+ont:relation_involves_object a owl:ObjectProperty .
 
 ont:1-147898401 a ont:object_attribute_value ;
     ont:has_attribute_name ont:Incident_number ;

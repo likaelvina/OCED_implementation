@@ -5,7 +5,6 @@ import xml.etree.ElementTree as ET
 from dateutil.parser import parse
 
 def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
-
     # Parse the XES file
     tree = ET.parse(xes_file_path)
     root = tree.getroot()
