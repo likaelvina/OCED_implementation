@@ -86,7 +86,7 @@
         {
             "object_id": "object_1-147898401",
             "object_type": "Incident",
-            "object_existency": true
+            "object_existency": false
         }
     ],
     "object_type": [
@@ -174,6 +174,13 @@
             "to_object_id": "object_A2_1_cn",
             "object_relation_type": "WORKS_FOR",
             "object_relation_existency": true
+        },
+        {
+            "object_relation_id": "object_relation_id1",
+            "from_object_id": "object_Tomas_Sweden",
+            "to_object_id": "object_A2_1_cn",
+            "object_relation_type": "SOME_DUMMY_RELATION",
+            "object_relation_existency": false
         }
     ],
     "object_relation_type": [

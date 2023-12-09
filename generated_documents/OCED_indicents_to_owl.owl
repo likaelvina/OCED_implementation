@@ -2,6 +2,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+ont:Incident a ont:object_type .
+
+ont:Incident_number a ont:object_attribute_name .
+
 ont:WORKS_FOR a ont:object_relation_type ;
     ont:relation_involves_object ont:object_A2_1_cn,
         ont:object_Tomas_Sweden .
@@ -32,10 +36,6 @@ ont:has_position a rdfs:DatatypeProperty .
 
 ont:has_timestamp a rdfs:ObjectProperty .
 
-ont:object_1-147898401 a ont:objects ;
-    ont:has_attribute_value ont:1-147898401 ;
-    ont:has_object_type ont:Incident .
-
 ont:object_PROD753 a ont:objects ;
     ont:has_attribute_value ont:PROD753 ;
     ont:has_object_type ont:Product .
@@ -43,9 +43,6 @@ ont:object_PROD753 a ont:objects ;
 ont:object_relation a owl:Class .
 
 ont:relation_involves_object a rdfs:ObjectProperty .
-
-ont:1-147898401 a ont:object_attribute_value ;
-    ont:has_attribute_name ont:Incident_number .
 
 <http://elvina.lika.al/ontology#2006-11-07T10:00:36+01:00> a ont:event_timestamp .
 
@@ -55,10 +52,6 @@ ont:A2_2 a ont:object_attribute_value ;
     ont:has_attribute_name ont:Support_Team_function_division .
 
 ont:Impact a ont:event_attribute_name .
-
-ont:Incident a ont:object_type .
-
-ont:Incident_number a ont:object_attribute_name .
 
 ont:PROD753 a ont:object_attribute_value ;
     ont:has_attribute_name ont:Product_number .
@@ -125,11 +118,11 @@ ont:event_attribute_name a owl:Class .
 
 ont:event_attribute_value a owl:Class .
 
-ont:object_type a owl:Class .
-
 ont:objects a owl:Class .
 
-ont:object_attribute_name a owl:Class .
+ont:object_type a owl:Class .
 
 ont:object_attribute_value a owl:Class .
+
+ont:object_attribute_name a owl:Class .
 

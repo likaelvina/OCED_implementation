@@ -174,10 +174,15 @@ def convert_OCED_to_rdf(oced_file_path, descriptors_file_path):
     key = "object"
     objects = oced_model[key]
 
+    notExistingObjects = {}
+
     for _object in objects:
-        object_instance_uri = URIRef(ont_ns + _object["object_id"])
-        g.add((object_instance_uri, RDF.type, objects_uri))
-        g.add((object_instance_uri, has_object_type_uri, URIRef(ont_ns + urllib.parse.quote(_object["object_type"]))))
+        if _object["object_existency"]:
+            object_instance_uri = URIRef(ont_ns + _object["object_id"])
+            g.add((object_instance_uri, RDF.type, objects_uri))
+            g.add((object_instance_uri, has_object_type_uri, URIRef(ont_ns + urllib.parse.quote(_object["object_type"]))))
+        else: 
+            notExistingObjects[_object["object_id"]] = True
 
 
     # OBJECT ATTRIBUTE VALUES instances
@@ -185,12 +190,13 @@ def convert_OCED_to_rdf(oced_file_path, descriptors_file_path):
     object_attribute_values = oced_model[key]
 
     for object_attribute_value in object_attribute_values:
-        value_full_uri = ont_ns + urllib.parse.quote(str(object_attribute_value["object_attribute_value"]))
-        name_full_uri = ont_ns + urllib.parse.quote(str(object_attribute_value["object_attribute_name"]))
-        g.add((URIRef(value_full_uri), RDF.type, object_attribute_value_uri))
-        g.add((URIRef(value_full_uri), has_attribute_name_uri, URIRef(name_full_uri)))
+        if not object_attribute_value["object_id"] in notExistingObjects and object_attribute_value["object_attribute_value_existency"] is not False:
+            value_full_uri = ont_ns + urllib.parse.quote(str(object_attribute_value["object_attribute_value"]))
+            name_full_uri = ont_ns + urllib.parse.quote(str(object_attribute_value["object_attribute_name"]))
+            g.add((URIRef(value_full_uri), RDF.type, object_attribute_value_uri))
+            g.add((URIRef(value_full_uri), has_attribute_name_uri, URIRef(name_full_uri)))
 
-        g.add((URIRef(ont_ns + object_attribute_value["object_id"]), has_attribute_value_uri, URIRef(value_full_uri)))
+            g.add((URIRef(ont_ns + object_attribute_value["object_id"]), has_attribute_value_uri, URIRef(value_full_uri)))
 
 
     # OBJECTS instances
@@ -198,12 +204,13 @@ def convert_OCED_to_rdf(oced_file_path, descriptors_file_path):
     object_relations = oced_model[key]
 
     for object_relation in object_relations:
-        object_relation_type_instance_uri = URIRef(ont_ns + object_relation["object_relation_type"])
-        object_relation_from_instance_uri = URIRef(ont_ns + object_relation["from_object_id"])
-        object_relation_to_instance_uri = URIRef(ont_ns + object_relation["to_object_id"])
+        if object_relation["object_relation_existency"]:
+            object_relation_type_instance_uri = URIRef(ont_ns + object_relation["object_relation_type"])
+            object_relation_from_instance_uri = URIRef(ont_ns + object_relation["from_object_id"])
+            object_relation_to_instance_uri = URIRef(ont_ns + object_relation["to_object_id"])
 
-        g.add((object_relation_type_instance_uri, involves_object_uri, object_relation_from_instance_uri))
-        g.add((object_relation_type_instance_uri, involves_object_uri, object_relation_to_instance_uri))
+            g.add((object_relation_type_instance_uri, involves_object_uri, object_relation_from_instance_uri))
+            g.add((object_relation_type_instance_uri, involves_object_uri, object_relation_to_instance_uri))
 
 
     # Create an ElementTree from the root
