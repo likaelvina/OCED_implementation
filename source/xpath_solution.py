@@ -350,14 +350,14 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
     # Create an ElementTree from the root
     rdf_xml = g.serialize(format="xml")
 
-    rdf_file_path = f"generated_documents/{file_name}_data_to_rdf_xpath.rdf"
+    rdf_file_path = f"generated_documents/xpath_{file_name}_data_to_rdf.rdf"
     with open(rdf_file_path, "w", encoding="utf-8") as file:
         file.write(rdf_xml)
     print(f"RDF/XML content saved to {rdf_file_path}")
 
     rdf_data = g.serialize(format="turtle")
     # Serialize the graph to a file
-    with open(f"generated_documents/{file_name}_data_to_owl_xpath.owl", "w", encoding="utf-8") as f:
+    with open(f"generated_documents/xpath_{file_name}_data_to_owl.owl", "w", encoding="utf-8") as f:
         f.write(rdf_data)
 
-    print(f"OWL content saved to {file_name}_data_to_owl_xpath.owl")
+    print(f"OWL content saved to xpath_{file_name}_data_to_owl.owl")

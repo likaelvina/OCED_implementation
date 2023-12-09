@@ -1,0 +1,244 @@
+{
+  "event": {
+    "event_id1": { "event_id": "event_id1", "time": "2006-11-07T10:00:36+01:00", "event_type": "Accepted In Progress" },
+    "event_id2": { "event_id": "event_id2", "time": "2006-11-07T13:05:44+01:00", "event_type": "Accepted In Progress" }
+  },
+  "event_type": ["Accepted In Progress"],
+  "time": ["2006-11-07T10:00:36+01:00", "2006-11-07T13:05:44+01:00"],
+  "event_attribute_name": ["Status", "Sub-status", "Impact"],
+  "event_attribute_value": {
+    "event_attribute_value1": {
+      "event_id": "event_id1",
+      "name": "Status",
+      "value": "Accepted"
+    },
+    "event_attribute_value2": {
+      "event_id": "event_id1",
+      "name": "Sub-status",
+      "value": "In Progress"
+    },
+    "event_attribute_value3": {
+      "event_id": "event_id1",
+      "name": "Impact",
+      "value": "Medium"
+    },
+    "event_attribute_value4": {
+      "event_id": "event_id2",
+      "name": "Status",
+      "value": "Accepted"
+    },
+    "event_attribute_value5": {
+      "event_id": "event_id2",
+      "name": "Sub-status",
+      "value": "In Progress"
+    },
+    "event_attribute_value6": {
+      "event_id": "event_id2",
+      "name": "Impact",
+      "value": "Medium"
+    }
+  },
+  "object": {
+    "object_PROD753": {
+      "object_id": "object_PROD753",
+      "object_type": "Product"
+    },
+    "object_A2_1_cn": {
+      "object_id": "object_A2_1_cn",
+      "object_type": "Support_Team_ST"
+    },
+    "object_Tomas_Sweden": {
+      "object_id": "object_Tomas_Sweden",
+      "object_type": "ST_responsible"
+    },
+    "object_1-147898401": {
+      "object_id": "object_1-147898401",
+      "object_type": "Incident"
+    }
+  },
+  "object_type": ["Product", "Support_Team_ST", "ST_responsible", "Incident"],
+  "object_attribute_name": [
+    "Product_number",
+    "Support_Team_function_division",
+    "Support_Team_country",
+    "ST_resp_person_first_name",
+    "ST_resp_person_op_country",
+    "Incident_number"
+  ],
+  "object_attribute_value": {
+    "object_attribute_value_id1": {
+      "object_attribute_value_id": "object_attribute_value_id1",
+      "object_id": "object_PROD753",
+      "name": "Product_number",
+      "value": "PROD753"
+    },
+    "object_attribute_value_id2": {
+      "object_attribute_value_id": "object_attribute_value_id2",
+      "object_id": "object_A2_1_cn",
+      "name": "Support_Team_function_division",
+      "value": "A2_2"
+    },
+    "object_attribute_value_id3": {
+      "object_attribute_value_id": "object_attribute_value_id3",
+      "object_id": "object_A2_1_cn",
+      "name": "Support_Team_country",
+      "value": "cn"
+    },
+    "object_attribute_value_id4": {
+      "object_attribute_value_id": "object_attribute_value_id4",
+      "object_id": "object_Tomas_Sweden",
+      "name": "ST_resp_person_first_name",
+      "value": "Tomas"
+    },
+    "object_attribute_value_id5": {
+      "object_attribute_value_id": "object_attribute_value_id5",
+      "object_id": "object_Tomas_Sweden",
+      "name": "ST_resp_person_op_country",
+      "value": "Sweden"
+    },
+    "object_attribute_value_id6": {
+      "object_attribute_value_id": "object_attribute_value_id6",
+      "object_id": "object_1-147898401",
+      "name": "Incident_number",
+      "value": "1-147898401"
+    }
+  },
+  "object_relation": {
+    "object_relation_id1": {
+      "object_relation_id": "object_relation_id1",
+      "from_object_id": "object_Tomas_Sweden",
+      "to_object_id": "object_A2_1_cn",
+      "relation_type": "WORKS_FOR"
+    }
+  },
+  "object_relation_type": ["WORKS_FOR"],
+  
+  "event_x_object": [
+    { "event_id": "event_id1", "object_id": "object_PROD753" },
+    { "event_id": "event_id1", "object_id": "object_A2_1_cn" },
+    { "event_id": "event_id1", "object_id": "object_Tomas_Sweden" },
+    { "event_id": "event_id1", "object_id": "object_1-147898401" },
+    { "event_id": "event_id2", "object_id": "object_PROD753" },
+    { "event_id": "event_id2", "object_id": "object_A2_1_cn" },
+    { "event_id": "event_id2", "object_id": "object_Tomas_Sweden" },
+    { "event_id": "event_id2", "object_id": "object_1-147898401" }
+  ],
+  "events_x_object_attribute_value": {},
+  "events_x_object_relation": {},
+  "event_dict": {
+    "event_id1": {
+      "time": "2006-11-07T10:00:36+01:00",
+      "event_type": "Accepted In Progress",
+      "object_ids_involved": ["object_PROD753", "object_A2_1_cn", "object_Tomas_Sweden", "object_1-147898401"],
+      "object_relation_ids_involved": ["object_relation_id1"],
+      "object_attribute_value_ids_involved": [
+        "object_attribute_value_id1",
+        "object_attribute_value_id2",
+        "object_attribute_value_id3",
+        "object_attribute_value_id4",
+        "object_attribute_value_id5",
+        "object_attribute_value_id6"
+      ],
+      "events_attributes": {
+        "Status": "Accepted",
+        "Sub-status": "In Progress",
+        "Impact": "Medium"
+      }
+    },
+    "event_id2": {
+      "time": "2006-11-07T13:05:44+01:00",
+      "event_type": "Accepted In Progress",
+      "object_ids_involved": ["object_PROD753", "object_A2_1_cn", "object_Tomas_Sweden", "object_1-147898401"],
+      "object_relation_ids_involved": ["object_relation_id1"],
+      "object_attribute_value_ids_involved": [
+        "object_attribute_value_id1",
+        "object_attribute_value_id2",
+        "object_attribute_value_id3",
+        "object_attribute_value_id4",
+        "object_attribute_value_id5",
+        "object_attribute_value_id6"
+      ],
+      "events_attributes": {
+        "Status": "Accepted",
+        "Sub-status": "In Progress",
+        "Impact": "Medium"
+      }
+    }
+  },
+  "object_dict": {
+    "object_PROD753": {
+      "object_type": "Product",
+      "attribute_value_ids": ["object_attribute_value_id1"],
+      "object_relation_ids_me_to_other": [],
+      "object_relation_ids_other_to_me": [],
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_A2_1_cn": {
+      "object_type": "Support_Team_ST",
+      "attribute_value_ids": ["object_attribute_value_id2", "object_attribute_value_id3"],
+      "object_relation_ids_me_to_other": [],
+      "object_relation_ids_other_to_me": [],
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_Tomas_Sweden": {
+      "object_type": "ST_responsible",
+      "attribute_value_ids": ["object_attribute_value_id4", "object_attribute_value_id5"],
+      "object_relation_ids_me_to_other": ["object_relation_id1"],
+      "object_relation_ids_other_to_me": [],
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_1-147898401": {
+      "object_type": "Incident",
+      "attribute_value_ids": ["object_attribute_value_id6"],
+      "object_relation_ids_me_to_other": [],
+      "object_relation_ids_other_to_me": [],
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    }
+  },
+  "object_attribute_value_dict": {
+    "object_attribute_value_id1": {
+      "object_id": "object_PROD753",
+      "name": "Product_number",
+      "value": "PROD753",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_attribute_value_id2": {
+      "object_id": "object_A2_1_cn",
+      "name": "Support_Team_function_division",
+      "value": "A2_2",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_attribute_value_id3": {
+      "object_id": "object_A2_1_cn",
+      "name": "Support_Team_country",
+      "value": "cn",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_attribute_value_id4": {
+      "object_id": "object_Tomas_Sweden",
+      "name": "ST_resp_person_first_name",
+      "value": "Tomas",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_attribute_value_id5": {
+      "object_id": "object_Tomas_Sweden",
+      "name": "ST_resp_person_op_country",
+      "value": "Sweden",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    },
+    "object_attribute_value_id6": {
+      "object_id": "object_1-147898401",
+      "name": "Incident_number",
+      "value": "1-147898401",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    }
+  },
+  "object_relation_dict": {
+    "object_relation_id1": {
+      "from_object_id": "object_Tomas_Sweden",
+      "to_object_id": "object_A2_1_cn",
+      "relation_type": "WORKS_FOR",
+      "involved_in_event_ids": ["event_id1", "event_id2"]
+    }
+  }
+}
