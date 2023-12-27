@@ -1,6 +1,6 @@
 import json
 import urllib.parse
-from rdflib import RDF, URIRef, Graph
+from rdflib import RDF, RDFS, URIRef, Graph
 import xml.etree.ElementTree as ET
 from dateutil.parser import parse
 
@@ -33,8 +33,8 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
     # Validate JSON file so that it has the proper information
     errors = []
 
-    if not "referred_infomation_from_event_log" in descriptors:
-        errors.append("You need to have referred_infomation_from_event_log in the descriptor file!")
+    if not "referred_information_from_event_log" in descriptors:
+        errors.append("You need to have referred_information_from_event_log in the descriptor file!")
 
     if not "injected_information_to_OCED_model" in descriptors:
         errors.append("You need to have injected_information_to_OCED_model in the descriptor file!")
@@ -43,7 +43,7 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
         print(errors)
         return
     
-    referred = descriptors["referred_infomation_from_event_log"]
+    referred = descriptors["referred_information_from_event_log"]
     injected = descriptors["injected_information_to_OCED_model"]
 
     if not "events" in referred:
@@ -156,10 +156,10 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
                     object_attribute_name_instance_uri = URIRef(ont_ns + attribute["object_attribute_name"])
                     g.add((object_attribute_name_instance_uri, RDF.type, object_attribute_name_uri))
 
-                if "relations" in obj:
-                    for relation in obj["relations"]:
-                        object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
-                        g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
+                # if "relations" in obj:
+                #     for relation in obj["relations"]:
+                #         object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
+                #         g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
 
 
     if "objects_relation" in injected:
@@ -167,7 +167,8 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
             if "relations" in rel_val:
                 for relation in rel_val["relations"]:
                     object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
-                    g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
+                    g.add((object_relation_type_instance_uri, RDF.type, URIRef(owl_ns + "Class")))
+                    g.add((object_relation_type_instance_uri, RDFS.subClassOf, object_relation_type_uri))
 
     has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
     g.add((has_attribute_name_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
@@ -215,7 +216,7 @@ def convert_xes_to_rdf_xpath_position(xes_file_path, descriptors_file_path):
         }
     '''
     
-    # Define a function to recursively extract information
+    # Define a function to extract information
     def extract_info(element):
         events = []
         # Extract key, value, and position attributes

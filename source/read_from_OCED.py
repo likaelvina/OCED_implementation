@@ -1,6 +1,6 @@
 import json
 import urllib.parse
-from rdflib import RDF, URIRef, Graph
+from rdflib import RDF, RDFS, URIRef, Graph
 import xml.etree.ElementTree as ET
 from dateutil.parser import parse
 
@@ -167,8 +167,8 @@ def convert_OCED_to_rdf(oced_file_path, descriptors_file_path):
 
     for object_relation_type in object_relation_types:
         object_relation_type_instance_uri = URIRef(ont_ns + object_relation_type["object_relation_type"])
-        g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
-
+        g.add((object_relation_type_instance_uri, RDF.type, URIRef(owl_ns + "Class")))
+        g.add((object_relation_type_instance_uri, RDFS.subClassOf, object_relation_type_uri))
 
     # OBJECTS instances
     key = "object"

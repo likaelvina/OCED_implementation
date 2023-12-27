@@ -6,9 +6,10 @@ ont:Incident a ont:object_type .
 
 ont:Incident_number a ont:object_attribute_name .
 
-ont:WORKS_FOR a ont:object_relation_type ;
+ont:WORKS_FOR a owl:Class ;
     ont:relation_involves_object ont:object_A2_1_cn,
-        ont:object_Tomas_Sweden .
+        ont:object_Tomas_Sweden ;
+    rdfs:subClassOf ont:object_relation_type .
 
 ont:event_id1 a ont:events ;
     ont:has_attribute_value ont:Accepted,

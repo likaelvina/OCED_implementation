@@ -1,5 +1,6 @@
 @prefix ont: <http://elvina.lika.al/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ont:EventID_1 a ont:events ;
     ont:has_attribute_value ont:Accepted,
@@ -2179,7 +2180,8 @@ ont:ST_resp_person_first_name a ont:object_attribute_name .
 
 ont:ST_responsible a ont:object_type .
 
-ont:WORKS_FOR a ont:object_relation_type .
+ont:WORKS_FOR a owl:Class ;
+    rdfs:subClassOf ont:object_relation_type .
 
 ont:OBJ_1-738300041 a ont:objects ;
     ont:has_attribute_value ont:1-738300041 ;

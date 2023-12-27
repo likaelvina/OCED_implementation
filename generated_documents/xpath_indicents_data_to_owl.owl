@@ -1785,7 +1785,8 @@ ont:ST_resp_person_first_name a ont:object_attribute_name .
 
 ont:ST_responsible a ont:object_type .
 
-ont:WORKS_FOR a ont:object_relation_type .
+ont:WORKS_FOR a owl:Class ;
+    rdfs:subClassOf ont:object_relation_type .
 
 ont:OBJ_1-738300041 a ont:objects ;
     ont:has_attribute_value ont:1-738300041 ;

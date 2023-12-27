@@ -1,7 +1,7 @@
 import json
 import pm4py
 import urllib.parse
-from rdflib import RDF, URIRef, Graph
+from rdflib import RDF, RDFS, URIRef, Graph
 
 def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     # Load XES file
@@ -17,8 +17,8 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     # Validate JSON file so that it has the proper information
     errors = []
 
-    if not "referred_infomation_from_event_log" in descriptors:
-        errors.append("You need to have referred_infomation_from_event_log in the descriptor file!")
+    if not "referred_information_from_event_log" in descriptors:
+        errors.append("You need to have referred_information_from_event_log in the descriptor file!")
 
     if not "injected_information_to_OCED_model" in descriptors:
         errors.append("You need to have injected_information_to_OCED_model in the descriptor file!")
@@ -27,7 +27,7 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
         print(errors)
         return
     
-    referred = descriptors["referred_infomation_from_event_log"]
+    referred = descriptors["referred_information_from_event_log"]
     injected = descriptors["injected_information_to_OCED_model"]
 
     if not "events" in referred:
@@ -124,35 +124,6 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     involves_object_uri = URIRef(ont_ns + "relation_involves_object")
     g.add((involves_object_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
-    for key, value in referred.items():
-        if key == "events": 
-            for attribute in value["attributes"]:
-                event_attribute_name_instance_uri = URIRef(ont_ns + attribute["event_attribute_name"])
-                g.add((event_attribute_name_instance_uri, RDF.type, event_attribute_name_uri))
-
-            for relation in value["relations_to_objects"]:
-                event_relation_type_uri = URIRef(ont_ns + relation["event_relation_type"])
-                g.add((event_relation_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
-
-        if key == "objects": 
-            for obj in value: 
-                for attribute in obj["attributes"]:
-                    object_attribute_name_instance_uri = URIRef(ont_ns + attribute["object_attribute_name"])
-                    g.add((object_attribute_name_instance_uri, RDF.type, object_attribute_name_uri))
-
-                if "relations" in obj:
-                    for relation in obj["relations"]:
-                        object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
-                        g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
-
-
-    if "objects_relation" in injected:
-        for rel, rel_val in injected["objects_relation"].items():
-            if "relations" in rel_val:
-                for relation in rel_val["relations"]:
-                    object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
-                    g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
-
     has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
     g.add((has_attribute_name_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
@@ -170,6 +141,36 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
 
     has_position_uri = URIRef(ont_ns + "has_position")
     g.add((has_position_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
+
+    for key, value in referred.items():
+        if key == "events": 
+            for attribute in value["attributes"]:
+                event_attribute_name_instance_uri = URIRef(ont_ns + attribute["event_attribute_name"])
+                g.add((event_attribute_name_instance_uri, RDF.type, event_attribute_name_uri))
+
+            for relation in value["relations_to_objects"]:
+                event_relation_type_uri = URIRef(ont_ns + relation["event_relation_type"])
+                g.add((event_relation_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
+
+        if key == "objects": 
+            for obj in value: 
+                for attribute in obj["attributes"]:
+                    object_attribute_name_instance_uri = URIRef(ont_ns + attribute["object_attribute_name"])
+                    g.add((object_attribute_name_instance_uri, RDF.type, object_attribute_name_uri))
+
+                # if "relations" in obj:
+                #     for relation in obj["relations"]:
+                #         object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
+                #         g.add((object_relation_type_instance_uri, RDF.type, object_relation_type_uri))
+
+
+    if "objects_relation" in injected:
+        for rel, rel_val in injected["objects_relation"].items():
+            if "relations" in rel_val:
+                for relation in rel_val["relations"]:
+                    object_relation_type_instance_uri = URIRef(ont_ns + relation["object_relation_type"])
+                    g.add((object_relation_type_instance_uri, RDF.type, URIRef(owl_ns + "Class")))
+                    g.add((object_relation_type_instance_uri, RDFS.subClassOf, object_relation_type_uri))
 
     allTraces = []
     matching_objects = [obj for obj in referred["objects"] if "is_trace" in obj and obj["is_trace"] is True]
@@ -211,6 +212,8 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
 
         g.add((event_instance_uri, has_timestamp_uri, event_timestamp_instance_uri))
 
+        g.add((event_instance_uri, has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}")))
+
         for attribute in value["attributes"]:
             # Combine the base URI and the encoded resource name to create the full URI
             full_uri = ont_ns + urllib.parse.quote(str(row[attribute["event_attribute_value_selector"]]))
@@ -220,8 +223,6 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
             g.add((event_instance_uri, has_attribute_value_uri, URIRef(full_uri)))
             g.add((URIRef(full_uri), has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}/Attribute:{attributes_positions[attribute['event_attribute_value_selector']]}")))
 
-        g.add((event_instance_uri, has_position_uri, URIRef(ont_ns + f"Trace:{traceId}/Event:{eventId}")))
-            
         key = "objects"
         value = referred[key]  
         all_event_objects = {}

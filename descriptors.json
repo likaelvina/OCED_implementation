@@ -3,7 +3,7 @@
     "file_name": "indicents",
     "IRI": "http://elvina.lika.al"
   },
-  "referred_infomation_from_event_log": {
+  "referred_information_from_event_log": {
     "events": {
       "event_type_selector": ["concept:name", "lifecycle:transition"],
       "event_timestamp": "time:timestamp",
