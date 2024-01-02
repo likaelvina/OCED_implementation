@@ -115,9 +115,6 @@ def convert_xes_to_rdf_manual_position(xes_file_path, descriptors_file_path):
     object_attribute_value_uri = URIRef(ont_ns + "object_attribute_value")
     g.add((object_attribute_value_uri, RDF.type, URIRef(owl_ns + "Class")))
 
-    object_relation_uri = URIRef(ont_ns + "object_relation")
-    g.add((object_relation_uri, RDF.type, URIRef(owl_ns + "Class")))
-
     object_relation_type_uri = URIRef(ont_ns + "object_relation_type")
     g.add((object_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
 

@@ -56,32 +56,29 @@ def convert_OCED_to_rdf(oced_file_path, descriptors_file_path):
     object_attribute_value_uri = URIRef(ont_ns + "object_attribute_value")
     g.add((object_attribute_value_uri, RDF.type, URIRef(owl_ns + "Class")))
 
-    object_relation_uri = URIRef(ont_ns + "object_relation")
-    g.add((object_relation_uri, RDF.type, URIRef(owl_ns + "Class")))
-
     object_relation_type_uri = URIRef(ont_ns + "object_relation_type")
     g.add((object_relation_type_uri, RDF.type, URIRef(owl_ns + "Class")))
 
     involves_object_uri = URIRef(ont_ns + "relation_involves_object")
-    g.add((involves_object_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((involves_object_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_attribute_name_uri = URIRef(ont_ns + "has_attribute_name")
-    g.add((has_attribute_name_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_attribute_name_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_attribute_value_uri = URIRef(ont_ns + "has_attribute_value")
-    g.add((has_attribute_value_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_attribute_value_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_event_type_uri = URIRef(ont_ns + "has_event_type")
-    g.add((has_event_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_event_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_timestamp_uri = URIRef(ont_ns + "has_timestamp")
-    g.add((has_timestamp_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_timestamp_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_object_type_uri = URIRef(ont_ns + "has_object_type")
-    g.add((has_object_type_uri, RDF.type, URIRef(rdf_ns + "ObjectProperty")))
+    g.add((has_object_type_uri, RDF.type, URIRef(owl_ns + "ObjectProperty")))
 
     has_position_uri = URIRef(ont_ns + "has_position")
-    g.add((has_position_uri, RDF.type, URIRef(rdf_ns + "DatatypeProperty")))
+    g.add((has_position_uri, RDF.type, URIRef(owl_ns + "DatatypeProperty")))
 
 
     # Getting data from the OCED_Model

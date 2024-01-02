@@ -25,25 +25,23 @@ ont:event_id2 a ont:events ;
     ont:has_event_type ont:Accepted%20In%20Progress ;
     ont:has_timestamp <http://elvina.lika.al/ontology#2006-11-07T13:05:44+01:00> .
 
-ont:has_attribute_name a rdfs:ObjectProperty .
+ont:has_attribute_name a owl:ObjectProperty .
 
-ont:has_attribute_value a rdfs:ObjectProperty .
+ont:has_attribute_value a owl:ObjectProperty .
 
-ont:has_event_type a rdfs:ObjectProperty .
+ont:has_event_type a owl:ObjectProperty .
 
-ont:has_object_type a rdfs:ObjectProperty .
+ont:has_object_type a owl:ObjectProperty .
 
-ont:has_position a rdfs:DatatypeProperty .
+ont:has_position a owl:DatatypeProperty .
 
-ont:has_timestamp a rdfs:ObjectProperty .
+ont:has_timestamp a owl:ObjectProperty .
 
 ont:object_PROD753 a ont:objects ;
     ont:has_attribute_value ont:PROD753 ;
     ont:has_object_type ont:Product .
 
-ont:object_relation a owl:Class .
-
-ont:relation_involves_object a rdfs:ObjectProperty .
+ont:relation_involves_object a owl:ObjectProperty .
 
 <http://elvina.lika.al/ontology#2006-11-07T10:00:36+01:00> a ont:event_timestamp .
 
